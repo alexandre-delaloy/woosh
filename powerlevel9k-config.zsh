@@ -1,0 +1,14 @@
+# LEFT SIDE
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(disk_usage ip context dir vcs)
+
+# RIGHT SIDE
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time date battery)
+
+# ROOT ICON 
+POWERLEVEL9K_HOME_ICON='🌳'
+
+# BATTERY STAGES
+POWERLEVEL9K_BATTERY_STAGES="▁▂▃▄▅▆▇█"
+
+# BATTERY CHARGING LEVELS
+POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(red1 orangered1 darkorange orange1 gold1 yellow1 yellow2 green1)
