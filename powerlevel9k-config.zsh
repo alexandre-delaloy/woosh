@@ -1,9 +1,12 @@
 
 # LEFT SIDE
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(disk_usage ip context dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+    disk_usage ip context dir dir_writable 
+    newline load node_version nvm vcs
+)
 
 # RIGHT SIDE
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs status history time date battery)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status newline history time date battery)
 
 # ROOT ICON 
 POWERLEVEL9K_HOME_ICON='🌳'
