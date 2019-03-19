@@ -1,3 +1,5 @@
 #!/bin/bash
 
-open -a "Google Chrome" https://github.com/blyndusk https://gitstalk.netlify.com/blyndusk
+username=$*
+
+open -a "Google Chrome" https://github.com/$username https://gitstalk.netlify.com/$username
