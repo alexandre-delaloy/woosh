@@ -1,10 +1,11 @@
 # GLOBAL
 alias a=alias
 alias c=clear
-alias cdc="cd && c"
-alias cdd="cd && cd ../.."
+alias cdc="cd && clear"
+alias cdd="cd ~/../.."
 alias e=exit
-alias host="php -S localhost:8000"
+alias gsudo="chmod 700"
+alias gotoexe="cd ~/../.. && cd usr/local/bin"
 alias lcl=localhost
 alias md="vim README.md"
 alias o="open ."
