@@ -1,18 +1,14 @@
 
-source  ~/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
-
-
 # LEFT SIDE
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     context 
     ip 
     disk_usage 
-    newline 
  
     node_version
     dir 
-    dir_writable
     load 
+    dir_writable
     vcs
 )
 
@@ -20,14 +16,13 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     status    
     history
-    newline
     time
     date
     battery
 )
 
 # ROOT ICON 
-POWERLEVEL9K_HOME_ICON='🌳'
+POWERLEVEL9K_HOME_ICON='🃏'
 
 
 # BATTERY STAGES
@@ -37,8 +32,84 @@ POWERLEVEL9K_BATTERY_STAGES="😡😩🙁😐🙂😌😄🤩"
 POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(235 237 239 241 243 245 247 251)
 
 # #794A98: purple // 055
-# #98e014: green // 154
+# #98e014: green // 040
 # #c10b29: red // 124
 # #E9F4F7: white // 231
 
-# POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="055"
+# CONTEXT =======================================
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="055"
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="040"
+
+# IP ============================================
+POWERLEVEL9K_IP_BACKGROUND="231"
+POWERLEVEL9K_IP_FOREGROUND="124"
+
+# DISK ==========================================
+#     NORMAL ------------------------------------
+POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND="040"
+POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND="055"
+#     WARNING -----------------------------------
+POWERLEVEL9K_DISK_USAGE_WARNING_BACKGROUND="214"
+POWERLEVEL9K_DISK_USAGE_WARNING_FOREGROUND="124"
+#     CRITICAL ----------------------------------
+POWERLEVEL9K_DISK_USAGE_CRITICAL_BACKGROUND="196"
+POWERLEVEL9K_DISK_USAGE_CRITICAL_FOREGROUND="088"
+
+# NODE VERSION ==================================
+POWERLEVEL9K_NODE_VERSION_FOREGROUND="231"
+POWERLEVEL9K_NODE_VERSION_BACKGROUND="124"
+
+# DIR ===========================================
+#     HOME --------------------------------------
+POWERLEVEL9K_DIR_HOME_BACKGROUND="055"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="124"
+#      DEFAULT ----------------------------------
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="055"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="231"
+#      HOME_SUBFOLDER ---------------------------
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="055"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="231"
+#     ETC ---------------------------------------
+POWERLEVEL9K_DIR_ETC_BACKGROUND="251"
+POWERLEVEL9K_DIR_ETC_FOREGROUND="235"
+#      DIR_WRITABLE -----------------------------
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="196"
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="226"
+
+# BATTERY =======================================
+#      CHARGING ---------------------------------
+POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND="051"
+POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND="039"
+#      CHARGED ----------------------------------
+POWERLEVEL9K_BATTERY_CHARGED_BACKGROUND="046"
+POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND="034"
+#      LOW --------------------------------------
+POWERLEVEL9K_BATTERY_LOW_BACKGROUND="196"
+POWERLEVEL9K_BATTERY_LOW_FOREGROUND="088"
+
+
+
+# STATUS ========================================
+#     OK ----------------------------------------
+POWERLEVEL9K_STATUS_OK_BACKGROUND="046"
+POWERLEVEL9K_STATUS_OK_FOREGROUND="034"
+#     LOW ---------------------------------------
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND="196"
+POWERLEVEL9K_STATUS_ERROR_FOREGROUND="226"
+
+# HISTORY =======================================
+POWERLEVEL9K_HISTORY_BACKGROUND="231"
+POWERLEVEL9K_HISTORY_FOREGROUND="124"
+
+# TIME ==========================================
+POWERLEVEL9K_TIME_BACKGROUND="040"
+POWERLEVEL9K_TIME_FOREGROUND="055"
+
+# DATE ==========================================
+POWERLEVEL9K_DATE_BACKGROUND="055"
+POWERLEVEL9K_DATE_FOREGROUND="040"
+
+
+
+
+
