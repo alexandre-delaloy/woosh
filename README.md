@@ -27,7 +27,7 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
 
 [`powerlevel9k-config.zsh`](https://github.com/blyndusk/tools-config/blob/master/powerlevel9k-config.zsh)
 
-![Joker-theme](https://image.noelshack.com/fichiers/2019/12/2/1553033155-capture-d-ecran-2019-03-19-a-22-48-52.png)
+![Joker-theme](https://image.noelshack.com/fichiers/2019/12/2/1553034327-joker-theme.jpg)
 
 ## Scripts
 
