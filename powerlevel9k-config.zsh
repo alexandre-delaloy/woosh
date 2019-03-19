@@ -1,35 +1,23 @@
-
 # LEFT SIDE
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    context 
-    ip 
-    disk_usage 
- 
+    context
+    ip
+    disk_usage
     node_version
-    dir 
-    load 
+    dir
+    load
     dir_writable
     vcs
 )
 
 # RIGHT SIDE
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-    status    
+    status
     history
     time
     date
     battery
 )
-
-# ROOT ICON 
-POWERLEVEL9K_HOME_ICON='🃏'
-
-
-# BATTERY STAGES
-POWERLEVEL9K_BATTERY_STAGES="😡😩🙁😐🙂😌😄🤩"
-
-# BATTERY CHARGING LEVELS
-POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(235 237 239 241 243 245 247 251)
 
 # #794A98: purple // 055
 # #98e014: green // 040
@@ -60,6 +48,11 @@ POWERLEVEL9K_NODE_VERSION_FOREGROUND="231"
 POWERLEVEL9K_NODE_VERSION_BACKGROUND="124"
 
 # DIR ===========================================
+#     ICON --------------------------------------
+POWERLEVEL9K_HOME_ICON='🃏'
+POWERLEVEL9K_HOME_SUB_ICON='🔪'
+POWERLEVEL9K_FOLDER_ICON='💣'
+POWERLEVEL9K_ETC_ICON='🔨'
 #     HOME --------------------------------------
 POWERLEVEL9K_DIR_HOME_BACKGROUND="055"
 POWERLEVEL9K_DIR_HOME_FOREGROUND="124"
@@ -77,6 +70,19 @@ POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="196"
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="226"
 
 # BATTERY =======================================
+#     STAGES ------------------------------------
+POWERLEVEL9K_BATTERY_STAGES="😡😩🙁😐🙂😌😄🤩"
+#     LEVELS ------------------------------------
+POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(
+    235
+    237
+    239
+    241
+    243
+    245
+    247
+    251
+)
 #      CHARGING ---------------------------------
 POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND="051"
 POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND="039"
@@ -108,8 +114,3 @@ POWERLEVEL9K_TIME_FOREGROUND="055"
 # DATE ==========================================
 POWERLEVEL9K_DATE_BACKGROUND="055"
 POWERLEVEL9K_DATE_FOREGROUND="040"
-
-
-
-
-
