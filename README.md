@@ -33,9 +33,10 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
 
 > a list of my personnal Shell scripts
 
-[Scripts](https://github.com/blyndusk/tools-config/tree/master/scripts):
+[`Scripts`](https://github.com/blyndusk/tools-config/tree/master/scripts):
 
 - [chr](https://github.com/blyndusk/tools-config/blob/master/scripts/chr.sh): open a **link**, a **file**, or **https://google.com**
 - [chr:dev](https://github.com/blyndusk/tools-config/blob/master/scripts/chr:dev.sh): open **GitHub** & **Gitstalk** with `user` parameter
 - [chr:mail](https://github.com/blyndusk/tools-config/blob/master/scripts/chr:mail.sh): open **Gmail** & **Outlook**
 - [host](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter
+- [shell-script](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter
