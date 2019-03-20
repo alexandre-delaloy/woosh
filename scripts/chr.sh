@@ -22,6 +22,12 @@ if [ $PARAM ]
 then
     if [ $PARAM = "-d" ] || [ $PARAM = "--dev" ]
     then
+        USER=$2
+        if [ $USER ]
+        then
+            DEV_URLS[0]="https://github.com/$USER"
+            DEV_URLS[1]="https://gitstalk.netlify.com/$USER"
+        fi
         open -a "Google Chrome" ${DEV_URLS[*]}
     elif [ $PARAM = "-m" ] || [ $PARAM = "--mail" ]
     then
