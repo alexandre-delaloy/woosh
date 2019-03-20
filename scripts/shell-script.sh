@@ -1,5 +1,10 @@
 #!/bin/sh
 
-filename=$1
+clear
 
-cd ~/../../usr/local/bin && touch $filename && chmod a+rx $filename && vim $filename
+FILENAME=$*
+
+cd ~/../../usr/local/bin &&
+touch $FILENAME &&
+chmod a+rx $FILENAME &&
+vim $FILENAME

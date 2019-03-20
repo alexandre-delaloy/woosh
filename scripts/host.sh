@@ -1,5 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
-port=$1
+clear
 
-php -S localhost:$port
+PORT=$*
+
+php -S localhost:$PORT
