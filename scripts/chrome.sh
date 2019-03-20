@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PARAM=$*
+PARAM=$1
 
 DEV_URLS=(
     "https://github.com"
@@ -13,9 +13,9 @@ MAIL_URLS=(
 )
 
 SOCIAL_URLS=(
-    "https://messenger.com"
-    "https://twitter.com"
     "https://reddit.com"
+    "https://twitter.com"
+    "https://messenger.com"
 )
 
 if [ $PARAM ]
@@ -44,4 +44,3 @@ then
 else
     open -a "Google Chrome" ./
 fi
-
