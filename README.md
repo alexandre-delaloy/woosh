@@ -35,8 +35,11 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
 
 [`Scripts`](https://github.com/blyndusk/tools-config/tree/master/scripts):
 
-- [`chr`](https://github.com/blyndusk/tools-config/blob/master/scripts/chr.sh): open a **link**, a **file**, or **https://google.com**
-- [`chr:dev`](https://github.com/blyndusk/tools-config/blob/master/scripts/chr:dev.sh): open **GitHub** & **Gitstalk** with `user` parameter
-- [`chr:mail`](https://github.com/blyndusk/tools-config/blob/master/scripts/chr:mail.sh): open **Gmail** & **Outlook**
+- [`add-commit-push`](https://github.com/blyndusk/tools-config/blob/master/scripts/add-commit-push.sh): **add** changes, **commit** changes with `message` parameter & **push**
+- [`chrome`](https://github.com/blyndusk/tools-config/blob/master/scripts/chrome.sh):
+
+  - `-d || --dev`: open [GitHub](https://github.com) & [Gitstalk](https://gitstalk.netlify.com/)
+  - `-m || --mail`: open [Gmail](https://mail.google.com) & [Outlook](https://outlook.live.com/)
+  - `-s || --social`: open [Reddit](https://reddit.com), [Twitter](https://twitter.com) & [Messenger](https://messenger.com)
 - [`host`](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter
 - [`shell-script`](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter
