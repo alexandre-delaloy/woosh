@@ -1,10 +1,41 @@
-#!/bin/bash
+#!/bin/sh
 
-url=$*
+PARAM=$*
 
-if [ $url ]
+DEV_URLS=(
+    "https://github.com"
+    "https://gitstalk.netlify.com"
+)
+
+MAIL_URLS=(
+    "https://mail.google.com/"
+    "https://outlook.live.com/"
+)
+
+SOCIAL_URLS=(
+    "https://messenger.com"
+    "https://twitter.com"
+    "https://reddit.com"
+)
+
+if [ $PARAM ]
 then
-	open -a "Google Chrome" $url
+    if [ $PARAM = "-d" ] || [ $PARAM = "--dev" ]
+    then
+        open -a "Google Chrome" ${DEV_URLS[*]}
+    elif [ $PARAM = "-m" ] || [ $PARAM = "--mail" ]
+    then
+        open -a "Google Chrome" ${MAIL_URLS[*]}
+    elif [ $PARAM = "-s" ] || [ $PARAM = "--social" ]
+    then
+        open -a "Google Chrome" ${SOCIAL_URLS[*]}
+    elif [ $PARAM = "-a" ] || [ $PARAM = "--all" ]
+    then
+        open -a "Google Chrome" ${MAIL_URLS[*]} ${SOCIAL_URLS[*]} ${DEV_URLS[*]}
+    else 
+        open -a "Google Chrome" $PARAM
+    fi
 else
-	open -a "Google Chrome" "http://google.com"
+    open -a "Google Chrome" ./
 fi
+
