@@ -1,40 +1,40 @@
 #!/bin/sh
 
-# Arrays of links
-DEV_URLS=(
+# Arrays of urls
+D_URLS=(
     "https://github.com"
     "https://gitstalk.netlify.com"
 )
-MAIL_URLS=(
+M_URLS=(
     "https://mail.google.com/"
     "https://outlook.live.com/"
 )
-SOCIAL_URLS=(
-    "https://reddit.com"
-    "https://twitter.com"
-    "https://messenger.com"
-)
-CHILL_URLS=(
+MV_URLS=(
     "https://music.youtube.com"
     "https://youtube.com"
     "https://netflix.com"
 )
+S_URLS=(
+    "https://reddit.com"
+    "https://twitter.com"
+    "https://messenger.com"
+)
 
-# First parameter
-PARAM=$1
-
+# will update the dev urls if user param was given
 UPDATE_DEV () {
-    # create a new user param
-    USER=$2
     # if the 2nd param exist
     if [ $USER ] ; then
         # update dev url with user param
-        DEV_URLS[0]="https://github.com/$USER"
-        DEV_URLS[1]="https://gitstalk.netlify.com/$USER"
-    # else open chrome with dev url
-    else open -a "Google Chrome" ${DEV_URLS[*]}
+        D_URLS[0]="https://github.com/$USER"
+        D_URLS[1]="https://gitstalk.netlify.com/$USER"
     fi
 }
+
+# will open new tabs in chrome with given arguments
+CHR () { open -a "Google Chrome" $* ; }
+
+# First parameter
+PARAM=$1
 
 # if the param exist
 if [ $PARAM ] ; then
@@ -42,32 +42,29 @@ if [ $PARAM ] ; then
     if [ $PARAM = "-d" ] || [ $PARAM = "--dev" ] ; then
         # create a new user param
         USER=$2
-        # if the 2nd param exist
-        if [ $USER ] ; then
-            # update dev url with user param
-            DEV_URLS[0]="https://github.com/$USER"
-            DEV_URLS[1]="https://gitstalk.netlify.com/$USER"
-        # else open chrome with dev url
-        open -a "Google Chrome" ${DEV_URLS[*]}
-        fi
-    # else if param is -m or --mail, open chrome whith mail url
-    elif [ $PARAM = "-m" ] || [ $PARAM = "--mail" ] ; then open -a "Google Chrome" ${MAIL_URLS[*]}
-    # you got the logic for the 2 next cases
-    elif [ $PARAM = "-s" ] || [ $PARAM = "--social" ] ; then open -a "Google Chrome" ${SOCIAL_URLS[*]}
-    elif [ $PARAM = "-c" ] || [ $PARAM = "--chill" ] ; then open -a "Google Chrome" ${CHILL_URLS[*]}
-
+        # update dev urls
+        UPDATE_DEV
+        # open chrome with dev urls
+        CHR ${D_URLS[*]}
+    # else if param is -m or --mail, open chrome with mail urls
+    elif [ $PARAM = "-m" ] || [ $PARAM = "--mail" ] ; then CHR ${M_URLS[*]}
+    # you got the logic for the 4 next cases
+    elif [ $PARAM = "-s" ] || [ $PARAM = "--social" ] ; then CHR ${S_URLS[*]}
+    elif [ $PARAM = "-mv" ] || [ $PARAM = "--musicvids" ] ; then CHR ${MV_URLS[*]}
+    elif [ $PARAM = "-w" ] || [ $PARAM = "--work" ] ; then CHR ${M_URLS[*]} ${D_URLS[*]}
+    elif [ $PARAM = "-c" ] || [ $PARAM = "--chill" ] ; then CHR ${S_URLS[*]} ${MV_URLS[*]}
     # else if the param is -a or --all
     elif [ $PARAM = "-a" ] || [ $PARAM = "--all" ] ; then
+        # same logic
         USER=$2
-        if [ $USER ] ; then
-            DEV_URLS[0]="https://github.com/$USER"
-            DEV_URLS[1]="https://gitstalk.netlify.com/$USER"
-        fi
-        open -a "Google Chrome" ${MAIL_URLS[*]} ${SOCIAL_URLS[*]} ${CHILL_URLS[*]} ${DEV_URLS[*]}
-    # else, open chrome with giver param
-    else open -a "Google Chrome" $PARAM
+        UPDATE_DEV
+        # but open all the urls
+        CHR ${M_URLS[*]} ${S_URLS[*]} ${MV_URLS[*]} ${D_URLS[*]}
+    # else if the param is -k or --kill, kill the chrome process
+    elif [ $PARAM = "-k" ] || [ $PARAM = "--kill" ] ; then killall "Google Chrome"
+    # else, open chrome with given param
+    else CHR $PARAM
     fi
 # else, open chrome with root directory
-else 
-    open -a "Google Chrome" `pwd`
+else CHR `pwd`
 fi
