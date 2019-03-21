@@ -63,8 +63,6 @@ if [ $PARAM ] ; then
     # else if the param is -k or --kill, kill the chrome process
     elif [ $PARAM = "-k" ] || [ $PARAM = "--kill" ] ; then killall "Google Chrome"
     # else, open chrome with given param
-    else CHR $PARAM
-    fi
+    else CHR $PARAM ; fi
 # else, open chrome with root directory
-else CHR `pwd`
-fi
+else CHR `pwd` ; fi
