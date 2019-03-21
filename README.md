@@ -43,3 +43,7 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
   - `-s || --social`: open [Reddit](https://reddit.com), [Twitter](https://twitter.com) & [Messenger](https://messenger.com)
 - [`host`](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter
 - [`shell-script`](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter
+
+## License
+
+Under MIT license
