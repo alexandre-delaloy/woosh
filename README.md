@@ -35,12 +35,16 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
 
 [`Scripts`](https://github.com/blyndusk/tools-config/tree/master/scripts):
 
-- [`add-commit-push`](https://github.com/blyndusk/tools-config/blob/master/scripts/add-commit-push.sh): **add** changes, **commit** changes with `message` parameter & **push**
+- [`add-commit-push`](https://github.com/blyndusk/tools-config/blob/master/scripts/add-commit-push.sh): **add** changes, **commit** changes with `message` parameter & **push**.
+- [`apps`](https://github.com/blyndusk/tools-config/blob/master/scripts/apps.zsh): **open** specific **apps**.
 - [`chrome`](https://github.com/blyndusk/tools-config/blob/master/scripts/chrome.sh):
 
   - `-d || --dev`: open [GitHub](https://github.com) & [Gitstalk](https://gitstalk.netlify.com/)
   - `-m || --mail`: open [Gmail](https://mail.google.com) & [Outlook](https://outlook.live.com/)
+  - `-mv || --musicvids`: open [YouTube Music](https://music.youtube.com), [YouTube](https://youtube.com) & [Netflix](https://netflix.com)
   - `-s || --social`: open [Reddit](https://reddit.com), [Twitter](https://twitter.com) & [Messenger](https://messenger.com)
-  - `-c || --chill`: open [YouTube Music](https://music.youtube.com), [YouTube](https://youtube.com) & [Netflix](https://netflix.com)
-- [`host`](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter
-- [`shell-script`](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter
+  - `-c || --chill`: open **musicvids** urls & **social** urls
+  - `-w || --work`: open **dev** urls & **mail** urls
+  - `-a || --all`: open **all** urls
+- [`host`](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter.
+- [`shell-script`](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter.
