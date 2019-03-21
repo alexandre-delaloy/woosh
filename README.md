@@ -41,9 +41,6 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
   - `-d || --dev`: open [GitHub](https://github.com) & [Gitstalk](https://gitstalk.netlify.com/)
   - `-m || --mail`: open [Gmail](https://mail.google.com) & [Outlook](https://outlook.live.com/)
   - `-s || --social`: open [Reddit](https://reddit.com), [Twitter](https://twitter.com) & [Messenger](https://messenger.com)
+  - `-c || --chill`: open [YouTube Music](https://music.youtube.com), [YouTube](https://youtube.com) & [Netflix](https://netflix.com)
 - [`host`](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter
 - [`shell-script`](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter
-
-## License
-
-Under MIT license

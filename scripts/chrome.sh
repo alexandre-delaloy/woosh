@@ -18,6 +18,12 @@ SOCIAL_URLS=(
     "https://messenger.com"
 )
 
+CHILL_URLS=(
+    "https://music.youtube.com"
+    "https://youtube.com"
+    "https://netflix.com"
+)
+
 if [ $PARAM ]
 then
     if [ $PARAM = "-d" ] || [ $PARAM = "--dev" ]
@@ -35,9 +41,18 @@ then
     elif [ $PARAM = "-s" ] || [ $PARAM = "--social" ]
     then
         open -a "Google Chrome" ${SOCIAL_URLS[*]}
+    elif [ $PARAM = "-c" ] || [ $PARAM = "--chill" ]
+    then
+        open -a "Google Chrome" ${CHILL_URLS[*]}
     elif [ $PARAM = "-a" ] || [ $PARAM = "--all" ]
     then
-        open -a "Google Chrome" ${MAIL_URLS[*]} ${SOCIAL_URLS[*]} ${DEV_URLS[*]}
+        USER=$2
+        if [ $USER ]
+        then
+            DEV_URLS[0]="https://github.com/$USER"
+            DEV_URLS[1]="https://gitstalk.netlify.com/$USER"
+        fi
+        open -a "Google Chrome" ${MAIL_URLS[*]} ${SOCIAL_URLS[*]} ${CHILL_URLS[*]} ${DEV_URLS[*]}
     else 
         open -a "Google Chrome" $PARAM
     fi
