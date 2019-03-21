@@ -13,47 +13,28 @@ L_PURPLE="\e[38;5;225m"
 ERROR="\e[38;5;196m"
 VALID="\e[38;5;118m"
 
-APPS_LIST=(
-    "Activity Monitor"
-    "Discord"
-    "Dashlane"
-)
 
+USER=$1
 
-HELLO () {
-    echo "
-
-"
-}
-
-PROCESS_STATUS () {
-    echo "
-$J_GREEN blyndusk
-$J_PURPLE  ╠══ $ERROR [$1]$J_PURPLE oShi
-$J_PURPLE  ╠══ $ERROR [$2]$J_PURPLE Apps
-$J_PURPLE  ╠══ $ERROR [$3]$J_PURPLE Chrome
-$J_PURPLE  ╚══ $ERROR [$4]$J_PURPLE Task List
-"
-}
+# PROCESS_STATUS () {
+#     echo "
+# $J_GREEN blyndusk
+# $J_PURPLE  ╠══ $ERROR [$1]$J_PURPLE oShi
+# $J_PURPLE  ╠══ $ERROR [$2]$J_PURPLE Apps
+# $J_PURPLE  ╠══ $ERROR [$3]$J_PURPLE Chrome
+# $J_PURPLE  ╚══ $ERROR [$4]$J_PURPLE Task List
+# "
+# }
 
 OSHI () { cd ~/Dev/oShi && pm2 start . --watch && cd `pwd` ; }
 
-APPS () {
-    for i in ${APPS_LIST[*]} ; do open -a "$i" ; done
-}
-
 CHROME () {
-    USER=$1
 
-    if [ $USER = "me" ]
-    then
-        chr -a "blyndusk"
-    else 
-        chr -a $USER
-    fi
+    if [ $USER = "me" ] ; then chr -a "blyndusk"
+    else chr -a $USER ; fi
 }
 
-
+STEP () { sleep 1 ; $* ; sleep 1 ; clear ; }
 
 clear
 
@@ -67,11 +48,7 @@ $J_PURPLE  ╠══ $ERROR [x]$J_PURPLE Chrome
 $J_PURPLE  ╚══ $ERROR [x]$J_PURPLE Task List
 "
 
-sleep 1
-
-OSHI
-
-sleep 1 ; clear
+STEP OSHI
 
 echo "
 $J_PURPLE╔═════════════════╗
@@ -83,11 +60,7 @@ $J_PURPLE  ╠══ $ERROR [x]$J_PURPLE Chrome
 $J_PURPLE  ╚══ $ERROR [x]$J_PURPLE Task List
 "
 
-sleep 1
-
-APPS
-
-sleep 1 ; clear
+STEP apps
 
 echo "
 $J_PURPLE╔═════════════════╗
@@ -99,11 +72,7 @@ $J_PURPLE  ╠══ $ERROR [x]$J_PURPLE Chrome
 $J_PURPLE  ╚══ $ERROR [x]$J_PURPLE Task List
 "
 
-sleep 1
-
-CHROME
-
-sleep 1 ; clear
+STEP CHROME
 
 echo "
 $J_PURPLE╔═════════════════╗
