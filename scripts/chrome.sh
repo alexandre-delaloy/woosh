@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # ===============================================
 # ------------------ VARIABLES ------------------
@@ -6,8 +6,8 @@
 
 # tabs url arrays
 DEV_URLS=(
-    "https://github.com"
-    "https://gitstalk.netlify.com"
+    "https://github.com/"
+    "https://gitstalk.netlify.com/"
 )
 MAIL_URLS=(
     "https://mail.google.com/"
@@ -42,7 +42,7 @@ PLAYLISTS=(
 VID="watch?v="
 # https://youtube.com/$LIST/playlist_id
 MUSIC="playlist?list="
-
+# me
 MAC_USER="blyndusk"
 
 # First parameter, given tabs
@@ -55,6 +55,9 @@ TABS=$1
 # will open new tabs in chrome with given arguments
 CHR () { open -a "Google Chrome" $* ; }
 
+# error message when the param doesn't exist
+WRONG_PARAM () { echo -e "\e[1;5;38;5;160m\"$*\" \e[0mparameter doesn't exist !" ; }
+
 # update $MUSICVIDS_URLS array with new value; 
 # $1 is the $MUSICVIDS_URLS index,
 # $2 is the $PLAYLISTS index,
@@ -64,25 +67,32 @@ UPDATE_MV_ARRAY () { MUSICVIDS_URLS[$1]="${MUSICVIDS_URLS[$1]}$3${PLAYLISTS[$2]}
 # update the $DEV_URLS if $USER param exist
 UPDATE_DEV () {
     if [ $USER ] ; then 
+        # if $USER is me, update $DEV_URLS with $MAC_USER
         if [ $USER = "me" ] ; then 
-            DEV_URLS[0]="https://github.com/$MAC_USER"
-            DEV_URLS[1]="https://gitstalk.netlify.com/$MAC_USER"
+            DEV_URLS[1]="${DEV_URLS[1]}$MAC_USER"
+            DEV_URLS[2]="${DEV_URLS[2]}$MAC_USER"
         else 
-            DEV_URLS[0]="https://github.com/$USER"
-            DEV_URLS[1]="https://gitstalk.netlify.com/$USER"
+            DEV_URLS[1]="${DEV_URLS[1]}$USER"
+            DEV_URLS[2]="${DEV_URLS[2]}$USER"
         fi
     fi
 }
 
 # update the $MUSICVIDS_URLS if $PLAYLIST_TYPE param exist
 UPDATE_MUSICVIDS () {
-    if [ $PLAYLIST_TYPE = "xx" ] ; then UPDATE_MV_ARRAY 0 0 $MUSIC
-    elif [ $PLAYLIST_TYPE = "sleep" ] ; then UPDATE_MV_ARRAY 0 1 $MUSIC
-    elif [ $PLAYLIST_TYPE = "dope" ] ; then UPDATE_MV_ARRAY 0 2 $MUSIC
-    elif [ $PLAYLIST_TYPE = "lofi" ] ; then
-        if [ $LOFI = "-r" ] || [ $LOFI = "--relax" ] ; then UPDATE_MV_ARRAY 1 3 $VID
-        elif [ $LOFI = "-s" ] || [ $LOFI = "--sleep" ] ; then UPDATE_MV_ARRAY 1 4 $VID
-        fi
+    if [ $PLAYLIST_TYPE ] ; then 
+        # if $PLAYLIST_TYPE is "xx" update the 1st element of $MUSICVIDS_URLS with the 1st element of $PLAYLISTS, $MUSIC type
+        if [ $PLAYLIST_TYPE = "xx" ] ; then UPDATE_MV_ARRAY 1 1 $MUSIC
+        elif [ $PLAYLIST_TYPE = "sleep" ] ; then UPDATE_MV_ARRAY 1 2 $MUSIC
+        elif [ $PLAYLIST_TYPE = "dope" ] ; then UPDATE_MV_ARRAY 1 3 $MUSIC
+        elif [ $PLAYLIST_TYPE = "lofi" ] ; then
+            # if $LOFI is "-r" update the 2nd element of $MUSICVIDS_URLS with the 4th element of $PLAYLISTS, $VID type
+            if [ $LOFI = "-r" ] || [ $LOFI = "--relax" ] ; then UPDATE_MV_ARRAY 2 4 $VID
+            elif [ $LOFI = "-s" ] || [ $LOFI = "--sleep" ] ; then UPDATE_MV_ARRAY 2 5 $VID
+            # else, display error message with $LOFI param given
+            else WRONG_PARAM $LOFI ; fi
+            # same logic
+        else WRONG_PARAM $PLAYLIST_TYPE ; fi
     fi
 }
 
@@ -118,7 +128,6 @@ if [ $TABS ] ; then
         USER=$2
         UPDATE_DEV
         # but open chrome with all $MAIL_URLS & all $DEV_URLS
-        CHR ${MAIL_URLS[*]} ${DEV_URLS[*]}
     elif [ $TABS = "-c" ] || [ $TABS = "--chill" ] ; then 
         # same logic
         PLAYLIST_TYPE=$2
@@ -136,7 +145,7 @@ if [ $TABS ] ; then
         UPDATE_MUSICVIDS
         # but open chrome with all the urls
         CHR ${MAIL_URLS[*]} ${SOCIAL_URLS[*]} ${MUSICVIDS_URLS[*]} ${DEV_URLS[*]}
-    # else, open chrome with given param
+    # else, open chrome with $TABS param
     else CHR $TABS ; fi
 # else, open chrome with root directory
 else CHR `pwd` ; fi
