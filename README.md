@@ -37,7 +37,7 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
 
 - [`add-commit-push`](https://github.com/blyndusk/tools-config/blob/master/scripts/add-commit-push.sh): **add** changes, **commit** changes with `message` parameter & **push**.
 - [`apps`](https://github.com/blyndusk/tools-config/blob/master/scripts/apps.zsh): **open** specific **apps**.
-- [`chrome`](https://github.com/blyndusk/tools-config/blob/master/scripts/chrome.sh):
+- [`⭐️ chrome`](https://github.com/blyndusk/tools-config/blob/master/scripts/chrome.sh):
 
   - `-d || --dev`: open [GitHub](https://github.com) & [Gitstalk](https://gitstalk.netlify.com/)
   - `-m || --mail`: open [Gmail](https://mail.google.com) & [Outlook](https://outlook.live.com/)
@@ -46,5 +46,8 @@ alias gotoexe="cd ~/../.. && cd usr/local/bin"
   - `-c || --chill`: open **musicvids** urls & **social** urls
   - `-w || --work`: open **dev** urls & **mail** urls
   - `-a || --all`: open **all** urls
+  - `-k || --kill`: kill **Chrome** process
 - [`host`](https://github.com/blyndusk/tools-config/blob/master/scripts/host.sh): open a **localhost** with `port` parameter.
+- [`️️⭐️ launch [WIP]`](https://github.com/blyndusk/tools-config/blob/master/scripts/launch.zsh): open **Discord bot server**, `apps`, `chrome` & a `todo` list
 - [`shell-script`](https://github.com/blyndusk/tools-config/blob/master/scripts/shell-script.sh): create a new shell script and edit it with `filename` parameter.
+- [`todo [WIP]`](https://github.com/blyndusk/tools-config/blob/master/scripts/todo.zsh): open a **todo-list**.
