@@ -87,8 +87,8 @@ UPDATE_MUSICVIDS () {
         elif [ $PLAYLIST_TYPE = "dope" ] ; then UPDATE_MV_ARRAY 1 3 $MUSIC
         elif [ $PLAYLIST_TYPE = "lofi" ] ; then
             # if $LOFI is "-r" update the 2nd element of $MUSICVIDS_URLS with the 4th element of $PLAYLISTS, $VID type
-            if [ $LOFI = "-r" ] || [ $LOFI = "--relax" ] ; then UPDATE_MV_ARRAY 2 4 $VID
-            elif [ $LOFI = "-s" ] || [ $LOFI = "--sleep" ] ; then UPDATE_MV_ARRAY 2 5 $VID
+            if [[ $LOFI = "-r" || $LOFI = "--relax" ]] ; then UPDATE_MV_ARRAY 2 4 $VID
+            elif [[ $LOFI = "-s" || $LOFI = "--sleep" ]] ; then UPDATE_MV_ARRAY 2 5 $VID
             # else, display error message with $LOFI param given
             else WRONG_PARAM $LOFI ; fi
             # same logic
@@ -103,19 +103,19 @@ UPDATE_MUSICVIDS () {
 # if $TABS exist
 if [ $TABS ] ; then
     # if param is "-m" or "--mail", open chrome with all $MAIL_URLS, same logic for the 2 next cases
-    if [ $TABS = "-m" ] || [ $TABS = "--mail" ] ; then CHR ${MAIL_URLS[*]}
-    elif [ $TABS = "-s" ] || [ $TABS = "--social" ] ; then CHR ${SOCIAL_URLS[*]} 
+    if [[ $TABS = "-m" || $TABS = "--mail" ]] ; then CHR ${MAIL_URLS[*]}
+    elif [[ $TABS = "-s" || $TABS = "--social" ]] ; then CHR ${SOCIAL_URLS[*]} 
     # else if the param is -k or --kill, kill the chrome process
-    elif [ $TABS = "-k" ] || [ $TABS = "--kill" ] ; then killall "Google Chrome"
+    elif [[ $TABS = "-k" || $TABS = "--kill" ]] ; then killall "Google Chrome"
     # else if $TABS is "-d" or "--dev"
-    elif [ $TABS = "-d" ] || [ $TABS = "--dev" ] ; then
+    elif [[ $TABS = "-d" || $TABS = "--dev" ]] ; then
         # create $USER 2nd param
         USER=$2
         # update $DEV_URLS
         UPDATE_DEV
         # open chrome with all $DEV_URLS
         CHR ${DEV_URLS[*]}
-    elif [ $TABS = "-mv" ] || [ $TABS = "--musicvids" ] ; then
+    elif [[ $TABS = "-mv" || $TABS = "--musicvids" ]] ; then
         # create $PLAYLIST_TYPE 2nd param & $LOFI 3rd param
         PLAYLIST_TYPE=$2
         LOFI=$3
@@ -123,12 +123,13 @@ if [ $TABS ] ; then
         UPDATE_MUSICVIDS
         # open chrome with all $MUSICVIDS_URLS
         CHR ${MUSICVIDS_URLS[*]}
-    elif [ $TABS = "-w" ] || [ $TABS = "--work" ] ; then 
+    elif [[ $TABS = "-w" || $TABS = "--work" ]] ; then 
         # same logic
         USER=$2
         UPDATE_DEV
         # but open chrome with all $MAIL_URLS & all $DEV_URLS
-    elif [ $TABS = "-c" ] || [ $TABS = "--chill" ] ; then 
+        CHR ${MAIL_URLS[*]} ${DEV_URLS[*]}
+    elif [[ $TABS = "-c" || $TABS = "--chill" ]] ; then 
         # same logic
         PLAYLIST_TYPE=$2
         LOFI=$3
@@ -136,7 +137,7 @@ if [ $TABS ] ; then
         # but open chrome with all $SOCIAL_URLS & all $MUSICVIDS_URLS
         CHR ${SOCIAL_URLS[*]} ${MUSICVIDS_URLS[*]}
     # else if the param is -a or --all
-    elif [ $TABS = "-a" ] || [ $TABS = "--all" ] ; then
+    elif [[ $TABS = "-a" || $TABS = "--all" ]] ; then
         # same logic
         USER=$2
         UPDATE_DEV
