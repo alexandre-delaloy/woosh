@@ -1,3 +1,5 @@
+#!/usr/local/bin/bash
+
 # LEFT SIDE
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     context
