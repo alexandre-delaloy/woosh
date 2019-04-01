@@ -17,7 +17,7 @@ MUSICVIDS_URLS=(
     "https://music.youtube.com/"
     "https://youtube.com/"
     "https://netflix.com"
-)
+)z  
 SOCIAL_URLS=(
     "https://reddit.com"
     "https://twitter.com"

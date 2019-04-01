@@ -6,6 +6,7 @@ alias cdd="cd ~/../.."
 alias e=exit
 alias gsudo="chmod 700"
 alias gotoexe="cd ~/../.. && cd usr/local/bin"
+alias kll="killall"
 alias lcl=localhost
 alias md="vim README.md"
 alias o="open ."
