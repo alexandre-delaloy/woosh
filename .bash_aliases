@@ -1,14 +1,17 @@
+#!/bin/bash
+
 # GLOBAL
 alias a=alias
 alias c=clear
 alias cdc="cd && clear"
 alias cdd="cd ~/../.."
 alias e=exit
-alias gsudo="chmod 700"
+alias gsudo="chmod a+rx"
 alias gotoexe="cd ~/../.. && cd usr/local/bin"
 alias kll="killall"
 alias lcl=localhost
 alias md="vim README.md"
+alias mkdir="mkdir -p"
 alias o="open ."
 alias vs="code ."
 alias zshrc="vim ~/.zshrc"
@@ -59,3 +62,7 @@ alias nrst="npm run start"
 alias nrsr="npm run serve"
 alias nrt="npm run test"
 alias nrw="npm run watch"
+
+# OTHERS
+
+alias gmc="gitmoji -c"
