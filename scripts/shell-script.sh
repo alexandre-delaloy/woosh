@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/usr/local/bin/bash
 
 FILENAME=$*
 
-cd ~/../../usr/local/bin
-touch $FILENAME
-chmod a+rx $FILENAME
-vim $FILENAME
+cd ~/../../usr/local/bin || exit
+touch "$FILENAME"
+chmod a+rx "$FILENAME"
+vim "$FILENAME"
