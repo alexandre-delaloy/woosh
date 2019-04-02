@@ -15,10 +15,11 @@ function newsh() {
 }
 
 # add, commit & push with custom message
-function acp() { 
+function acp() {
+	MSG="$*"
 	git add . 
-	read -r "$@" && git commit -m "$@"
-	git push ; 
+	echo "Custom commit message:" && read -r MSG && git commit -m "$MSG"
+	git push
 }
 
 # open specific apps
