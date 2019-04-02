@@ -1,6 +1,21 @@
 #!/bin/bash
 
 # create a new folder and go into it
-function mkd() {
-	mkdir -p "$@" && cd "$_" || exit;
+function mkd() { mkdir -p "$@" && cd "$_" || exit ; }
+
+# create a host with specific port
+function host() { php -S localhost:"$1" ; }
+
+# create a new bash script
+function newsh() {
+	FILE=/usr/local/bin/"$1"
+	touch "$FILE"
+	chmod a+rx "$FILE"
+	echo "#!/usr/local/bin/bash" > "$FILE"
 }
+
+# add, commit & push with custom message
+function acp() { git add . && git commit -m "$@" && git push ; }
+
+# open specific apps
+function apps() { for i in "${APPS[@]}" ; do open -a "$i" ; done ; }
