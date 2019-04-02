@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export APPS=(
+    "Discord"
+    "Dashlane"
+    "Activity Monitor"
+)
