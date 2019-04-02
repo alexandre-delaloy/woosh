@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# create a new folder and go into it
+function mkd() {
+	mkdir -p "$@" && cd "$_" || exit;
+}
