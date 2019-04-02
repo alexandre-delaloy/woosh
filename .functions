@@ -15,7 +15,11 @@ function newsh() {
 }
 
 # add, commit & push with custom message
-function acp() { git add . && git commit -m "$@" && git push ; }
+function acp() { 
+	git add . 
+	read -r "$@" && git commit -m "$@"
+	git push ; 
+}
 
 # open specific apps
 function apps() { for i in "${APPS[@]}" ; do open -a "$i" ; done ; }

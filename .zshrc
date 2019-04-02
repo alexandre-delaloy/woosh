@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# import .bash_aliases dotfile if the file exist
+# import .aliases dotfile if the file exist
 if [ -f ~/.aliases ] ; then . ~/.aliases ; fi
+# import .exports dotfile if the file exist
+if [ -f ~/.exports ] ; then . ~/.exports ; fi
 # import .functions dotfile if the file exist
 if [ -f ~/.functions ] ; then . ~/.functions ; fi
-# import .functions dotfile if the file exist
+# import .powerlevel9k dotfile if the file exist
 if [ -f ~/.powerlevel9k ] ; then . ~/.powerlevel9k ; fi

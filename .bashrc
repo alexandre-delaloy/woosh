@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# import .functions dotfile if the file exist
+# import .bash_profile dotfile if the file exist
 if [ -f ~/.bash_profile ] ; then . ~/.bash_profile ; fi
