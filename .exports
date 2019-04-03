@@ -1,12 +1,7 @@
 #!/bin/bash
 
-export APPS=(
-    "Discord"
-    "Dashlane"
-    "Activity Monitor"
-)
-
-export BREW_FORMULAE=( 
+# brew formulaes to install
+export BREW_FORMULAES=( 
     # package manager
     node
     yarn
@@ -25,7 +20,8 @@ export BREW_FORMULAE=(
     vim
 )
 
-export BREW_CASK=(
+# brew casks to install
+export BREW_CASKS=(
     alfred
     dashlane
     discord
@@ -33,4 +29,46 @@ export BREW_CASK=(
     iterm2
     visual-studio-code
     zeplin
+)
+
+# apps list for apps fn()
+export APPS=(
+    "Discord"
+    "Dashlane"
+    "Activity Monitor"
+)
+
+
+# tabs url arrays
+export DEV_URLS=(
+    "https://github.com/"
+    "https://gitstalk.netlify.com/"
+)
+export MAIL_URLS=(
+    "https://mail.google.com/"
+    "https://outlook.live.com/"
+)
+export MUSICVIDS_URLS=(
+    "https://music.youtube.com/"
+    "https://youtube.com/"
+    "https://netflix.com"
+)
+export SOCIAL_URLS=(
+    "https://reddit.com"
+    "https://twitter.com"
+    "https://messenger.com"
+)
+
+# YouTube Music & Youtube playlists
+export PLAYLISTS=(
+    # grandson
+    "PL5UDQMgl1JYhU8PD-3GudN_twxxuGp6y2"
+    # to sleep
+    "PL5UDQMgl1JYjG1e7dGyuHKv22JConOoh2"
+    # dope
+    "PL5UDQMgl1JYiNa9UOSVEJNf61SEcVuThW"
+    # lofi relax
+    "hHW1oY26kxQ"
+    # lofi sleep
+    "axOhJh1x2n8"
 )
