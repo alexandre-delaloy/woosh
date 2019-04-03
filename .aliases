@@ -1,20 +1,25 @@
 #!/bin/bash
 
 # GLOBAL
-alias a=alias
 alias c=clear
 alias cdc="cd && clear"
-alias cdd="cd ~/../.."
+alias del="rm -rf"
 alias e=exit
-alias gsudo="chmod a+rx"
-alias gotoexe="cd ~/../.. && cd usr/local/bin"
-alias kll="killall"
+alias gmc="gitmoji -c"
+alias k=killall
+alias kter="killall iTerm2"
 alias lcl=localhost
+alias localsh="cd /usr/local/bin"
 alias md="vim README.md"
-alias mkdir="mkdir -p"
 alias o="open ."
 alias vs="code ."
-alias zshrc="vim ~/.zshrc"
+
+# DIRECTORIES
+alias apl="cd /Applications"
+alias dll="cd ~/Downloads"
+alias dsk="cd ~/Desktop"
+alias doc="cd ~/Documents"
+alias dev="cd ~/Dev"
 
 # SHUTDOWN
 alias bye="sudo shutdown -h now"
@@ -62,7 +67,3 @@ alias nrst="npm run start"
 alias nrsr="npm run serve"
 alias nrt="npm run test"
 alias nrw="npm run watch"
-
-# OTHERS
-
-alias gmc="gitmoji -c"
