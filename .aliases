@@ -1,19 +1,22 @@
 #!/bin/bash
 
 # GLOBAL
+# shortcut command 
 alias c=clear
-alias cdc="cd && clear"
-alias del="rm -rf"
-alias delds="sudo find . -name '.DS_Store' -type f -delete"
 alias e=exit
-alias gmc="gitmoji -c"
 alias god=sudo
 alias k=killall
-alias kter="killall iTerm2"
 alias lcl=localhost
+alias src=source
+alias del="rm -rf"
+alias tch=touch
+# many one-line commands
+alias cdc="cd && clear"
+alias delds="sudo find . -name '.DS_Store' -type f -delete"
+alias gmc="gitmoji -c"
+alias kter="killall iTerm2"
 alias localsh="cd /usr/local/bin"
 alias md="vim README.md"
-alias tch=touch
 alias vs="code ."
 
 # DIRECTORIES
