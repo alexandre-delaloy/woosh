@@ -30,3 +30,11 @@ function o() {
 	if [ $# -eq 0 ] ; then open . ;
 	else open "$@" ; fi ;
 }
+
+# delete all trash content
+function trash() {
+	TRASH="$HOME/.Trash/*"
+	TRASH_DOT="$HOME/.Trash/.*"
+	if [ "${#TRASH[@]}" -gt 0 ] ; then rm -rf ~/.Trash/* ; fi
+	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
+}

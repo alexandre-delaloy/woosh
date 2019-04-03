@@ -14,7 +14,6 @@ alias lcl=localhost
 alias localsh="cd /usr/local/bin"
 alias md="vim README.md"
 alias tch=touch
-alias trash="sudo rm -rf ~/.Trash/* && rm -rf ~/.Trash/.*"
 alias vs="code ."
 
 # DIRECTORIES
