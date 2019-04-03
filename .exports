@@ -6,7 +6,7 @@ export APPS=(
     "Activity Monitor"
 )
 
-export BREW_APPS=( 
+export BREW_FORMULAE=( 
     # package manager
     node
     yarn
@@ -25,7 +25,7 @@ export BREW_APPS=(
     vim
 )
 
-export BREW_APPS_CASK=(
+export BREW_CASK=(
     alfred
     dashlane
     discord

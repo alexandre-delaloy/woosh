@@ -3,7 +3,6 @@
 function SYNC_DOTFILES () {
     # get the last version of my repository
     git pull origin master
-
     # for every file in my dotfiles repository
     for i in "$(pwd)"/.*
     do
@@ -15,7 +14,6 @@ function SYNC_DOTFILES () {
             echo "$FILE not found !" && touch "$FILE"
         fi
     done
-
     # sync all files in my dotfiles repository, excluding specific files
     rsync --exclude ".git" \
         --exclude ".zshrc" \
@@ -23,33 +21,27 @@ function SYNC_DOTFILES () {
         --exclude "install.sh" \
         --exclude "scripts" \
         -avh --no-perms . ~;
-    source ~ ;
+    source ~;
 }
 function INSTALL_BREW_STUFF() {
-    
     # install brew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+    if [ "$(command -v brew)" ] ; then 
+        echo "brew not found. Installing brew.."
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    fi
     # be sure this is the latest version
     brew update
-
     # upgrade any already-installed formulae.
     brew upgrade
-
     # install all given brew formulae
-    for i in "${BREW_APPS[@]}" ; do brew install "$i" ; done
-
+    for i in "${BREW_FORMULAE[@]}" ; do brew install "$i" ; done
     # install all given brew casks
-    for i in "${BREW_APPS_CASK[@]}" ; do brew cask install "$i" ; done
-
+    for i in "${BREW_CASK[@]}" ; do brew cask install "$i" ; done
     # remove outdated versions
     brew cleanup
-
     # diagnosis formulae
     brew doctor
 }
 
-
-SYNC_DOTFILES
-
+# SYNC_DOTFILES
 # INSTALL_BREW_STUFF
