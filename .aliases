@@ -6,20 +6,23 @@ alias cdc="cd && clear"
 alias del="rm -rf"
 alias e=exit
 alias gmc="gitmoji -c"
+alias god=sudo
 alias k=killall
 alias kter="killall iTerm2"
 alias lcl=localhost
 alias localsh="cd /usr/local/bin"
 alias md="vim README.md"
 alias o="open ."
+alias tch=touch
+alias trash="sudo rm -rf ~/.Trash/* && rm -rf ~/.Trash/.*"
 alias vs="code ."
 
 # DIRECTORIES
 alias apl="cd /Applications"
+alias dev="cd ~/Dev"
+alias doc="cd ~/Documents"
 alias dll="cd ~/Downloads"
 alias dsk="cd ~/Desktop"
-alias doc="cd ~/Documents"
-alias dev="cd ~/Dev"
 
 # SHUTDOWN
 alias bye="sudo shutdown -h now"
