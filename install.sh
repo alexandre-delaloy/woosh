@@ -1,26 +1,29 @@
 #!/bin/bash
 
 function SYNC_DOTFILES () {
+    # get the last version of my repository
+    git pull origin master
 
+    # for every file in my dotfiles repository
     for i in "$(pwd)"/.*
     do
-        if [ ! -f "$HOME/$(basename "$i")" ]; then
-            echo "$HOME/$(basename "$i") not found !"
-            touch "$HOME/$(basename "$i")"
+        # return the same file in the home directory
+        FILE=$HOME/$(basename "$i")
+        # if this file not exist or if its not a git file,
+        if [[ ! -f "$FILE" && "$FILE" != "$HOME/.git" ]]; then
+            # create the file
+            echo "$FILE not found !" && touch "$FILE"
         fi
     done
 
-    # rsync --exclude ".aliases" \
-    #     --exclude ".bash_profile" \
-    #     --exclude ".bashrc" \
-    #     --exclude ".git" \
-    #     --exclude ".powerlevel9k" \
-    #     --exclude ".zshrc" \
-    #     --exclude "README.md" \
-    #     --exclude "install.sh" \
-    #     --exclude "scripts" \
-    #     -avh --no-perms . ~;
-    # source ~;
+    # sync all files in my dotfiles repository, excluding specific files
+    rsync --exclude ".git" \
+        --exclude ".zshrc" \
+        --exclude "README.md" \
+        --exclude "install.sh" \
+        --exclude "scripts" \
+        -avh --no-perms . ~;
+    source ~ ;
 }
 function INSTALL_BREW_STUFF() {
     
@@ -46,6 +49,7 @@ function INSTALL_BREW_STUFF() {
     brew doctor
 }
 
-# INSTALL_BREW_STUFF
 
 SYNC_DOTFILES
+
+# INSTALL_BREW_STUFF
