@@ -5,3 +5,32 @@ export APPS=(
     "Dashlane"
     "Activity Monitor"
 )
+
+export BREW_APPS=( 
+    # package manager
+    node
+    yarn
+    # installers
+    curl
+    wget
+    # languages
+    bash
+    git
+    mysql
+    zsh
+    # tools
+    shellcheck
+    tree
+    # IDE
+    vim
+)
+
+export BREW_APPS_CASK=(
+    alfred
+    dashlane
+    discord
+    gyazo
+    iterm2
+    visual-studio-code
+    zeplin
+)
