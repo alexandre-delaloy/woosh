@@ -23,3 +23,7 @@ source install.sh
     - install all formulae (`.exports/$BREW_FORMULAE`
     - install all casks (`.exports/$BREW_CASKS`)
     - cleanup & diagnosis
+
+## License
+
+Under [MIT](https://github.com/blyndusk/dotfiles/blob/master/LICENSE) license.
