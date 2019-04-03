@@ -1,22 +1,51 @@
 #!/bin/bash
 
-# install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+function SYNC_DOTFILES () {
 
-# be sure this is the latest version
-brew update
+    for i in "$(pwd)"/.*
+    do
+        if [ ! -f "$HOME/$(basename "$i")" ]; then
+            echo "$HOME/$(basename "$i") not found !"
+            touch "$HOME/$(basename "$i")"
+        fi
+    done
 
-# upgrade any already-installed formulae.
-brew upgrade
+    # rsync --exclude ".aliases" \
+    #     --exclude ".bash_profile" \
+    #     --exclude ".bashrc" \
+    #     --exclude ".git" \
+    #     --exclude ".powerlevel9k" \
+    #     --exclude ".zshrc" \
+    #     --exclude "README.md" \
+    #     --exclude "install.sh" \
+    #     --exclude "scripts" \
+    #     -avh --no-perms . ~;
+    # source ~;
+}
+function INSTALL_BREW_STUFF() {
+    
+    # install brew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install all given brew formulae
-for i in "${BREW_APPS[@]}" ; do brew install "$i" ; done
+    # be sure this is the latest version
+    brew update
 
-# install all given brew casks
-for i in "${BREW_APPS_CASK[@]}" ; do brew cask install "$i" ; done
+    # upgrade any already-installed formulae.
+    brew upgrade
 
-# remove outdated versions
-brew cleanup
+    # install all given brew formulae
+    for i in "${BREW_APPS[@]}" ; do brew install "$i" ; done
 
-# diagnosis formulae
-brew doctor
+    # install all given brew casks
+    for i in "${BREW_APPS_CASK[@]}" ; do brew cask install "$i" ; done
+
+    # remove outdated versions
+    brew cleanup
+
+    # diagnosis formulae
+    brew doctor
+}
+
+# INSTALL_BREW_STUFF
+
+SYNC_DOTFILES
