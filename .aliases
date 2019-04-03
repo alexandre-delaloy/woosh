@@ -4,6 +4,7 @@
 alias c=clear
 alias cdc="cd && clear"
 alias del="rm -rf"
+alias delds="sudo find . -name '.DS_Store' -type f -delete"
 alias e=exit
 alias gmc="gitmoji -c"
 alias god=sudo
@@ -12,7 +13,6 @@ alias kter="killall iTerm2"
 alias lcl=localhost
 alias localsh="cd /usr/local/bin"
 alias md="vim README.md"
-alias o="open ."
 alias tch=touch
 alias trash="sudo rm -rf ~/.Trash/* && rm -rf ~/.Trash/.*"
 alias vs="code ."
