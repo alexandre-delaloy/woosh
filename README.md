@@ -2,7 +2,7 @@
 
 <p><a href="https://github.com/blyndusk/dotfiles/releases" alt="Release"><img src="https://img.shields.io/github/release/blyndusk/dotfiles.svg"></a></p>
 
-> ⚙️ ⚙️ my personal dotfiles for MacOS, with  automated installation & update
+> ⚙️ my personal dotfiles for MacOS, with  automated installation & update
 
 ## Get started
 
