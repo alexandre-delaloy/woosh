@@ -16,7 +16,6 @@ alias delds="sudo find . -name '.DS_Store' -type f -delete"
 alias gmc="gitmoji -c"
 alias kter="killall iTerm2"
 alias localsh="cd /usr/local/bin"
-alias md="vim README.md"
 alias vs="code ."
 
 # DIRECTORIES
