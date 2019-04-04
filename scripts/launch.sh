@@ -1,8 +1,8 @@
 #!/usr/local/bin/bash
 
-# ===============================================
-# ------------------ VARIABLES ------------------
-# ===============================================
+. $HOME/.exports
+. $HOME/.functions
+
 
 # COLORS
 J_PURPLE="\e[38;5;99m"
@@ -40,28 +40,21 @@ $TASKS_STATUS
 }
 
 UPDATE_STATUS () { sleep 1 ; "$@" ; sleep 1 ; clear ; }
-OSHI () { cd ~/Dev/OWN/oShi && pm2 start . --watch && cd "$(pwd)" || exit ; }
-APPS () { apps ; }
-CHROME () {
-    if [ "$USER" = "me" ] ; then chr -a "blyndusk"
-    else chr -a "$USER"; fi
-}
-NONE () { echo "non" ; }
 
-PROCESS_STATUS
+clear ; PROCESS_STATUS
 
-UPDATE_STATUS OSHI
+UPDATE_STATUS oShi
 OSHI_STATUS="$J_PURPLE  ╠══ $VALID [v]$J_PURPLE oShi"
 PROCESS_STATUS
 
-UPDATE_STATUS APPS
+UPDATE_STATUS apps
 APPS_STATUS="$J_PURPLE  ╠══ $VALID [v]$J_PURPLE Apps"
 PROCESS_STATUS
 
-UPDATE_STATUS CHROME
+UPDATE_STATUS chr
 CHR_STATUS="$J_PURPLE  ╠══ $VALID [v]$J_PURPLE Chrome"
 PROCESS_STATUS
 
-UPDATE_STATUS NONE
+UPDATE_STATUS todo
 TASKS_STATUS="$J_PURPLE  ╚══ $VALID [v]$J_PURPLE Tasks"
 PROCESS_STATUS
