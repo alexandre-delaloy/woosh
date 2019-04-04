@@ -4,24 +4,27 @@
 function acp() {
 	MSG="$*"
 	git add . 
-	echo "Custom commit message:" && read -r MSG && git commit -m "$MSG"
+	echo "Custom commit message:" ; read -r MSG ; git commit -m "$MSG"
 	git push
 }
 
 # open specific apps
-function apps() { for i in "${APPS[@]}" ; do open -a "$i" ; done ; }
+function apps() { for i in "${APPS[@]}" ; do 
+	echo -e "\e[38;5;15m$i's launching ... \e[38;5;196m[x]"
+	open -a "$i" ; sleep 1
+	echo -e "\e[38;5;15m$i's launched ! \e[38;5;47m[v]" ; sleep 1
+done ; }
 
 # create a host with specific port
 function host() { php -S localhost:"$1" ; }
 
 # create a new folder and go into it
-function mkd() { mkdir -p "$@" && cd "$_" || exit ; }
+function mkd() { mkdir -p "$@" ; cd "$_" || exit ; }
 
 # create a new bash script
 function newsh() {
 	FILE=/usr/local/bin/"$1"
-	touch "$FILE"
-	chmod a+rx "$FILE"
+	touch "$FILE" ; chmod a+rx "$FILE"
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
 
@@ -30,6 +33,9 @@ function o() {
 	if [ $# -eq 0 ] ; then open . ;
 	else open "$@" ; fi ;
 }
+
+# launch oShi Discord bot server
+function oShi() { pm2 start ~/Dev/OWN/TOOLS/oShi/app.js --watch ; }
 
 # delete all trash content
 function trash() {
