@@ -34,32 +34,32 @@ WRONG_PARAM () { echo -e "\e[1;5;38;5;160m\"$*\" \e[0mparameter doesn't exist !"
 # $3 is the type ($MUSIC or $VID)
 UPD_MV_ARR () { MUSICVIDS_URLS[$1]="${MUSICVIDS_URLS[$1]}$3${PLAYLISTS[$2]}" ; } 
 
+UPD_DEV_ARR () { 
+    DEV_URLS[0]="${DEV_URLS[0]}$1" ; 
+    DEV_URLS[1]="${DEV_URLS[1]}$1" ; 
+}
+
 # update the $DEV_URLS if $USER param exist
 UPDATE_DEV () {
-    UPD_DEV_ARR () { 
-        TEMPO_DEV[0]="${TEMPO_DEV[0]}$1" ; 
-        TEMPO_DEV[1]="${TEMPO_DEV[1]}$1" ; 
-    }
+    
     if [ "$USER" ] ; then 
-        TEMPO_DEV=("${DEV_URLS[@]}")
         # if $USER is me, update $DEV_URLS with $MAC_USER
         if [ "$USER" = "me" ] ; then UPD_DEV_ARR $MAC_USER
         else UPD_DEV_ARR "$USER" ; fi
-        CHR "${TEMPO_DEV[*]}"
-    else CHR "${DEV_URLS[*]}" ; fi
+    fi 
 }
 
 # update the $MUSICVIDS_URLS if $PLAYLIST_TYPE param exist
 UPDATE_MUSICVIDS () {
     if [ "$PLAYLIST_TYPE" ] ; then 
         # if $PLAYLIST_TYPE is "xx" update the 1st element of $MUSICVIDS_URLS with the 1st element of $PLAYLISTS, $MUSIC type
-        if [ "$PLAYLIST_TYPE" = "xx" ] ; then UPD_MV_ARR 1 1 "$MUSIC"
-        elif [ "$PLAYLIST_TYPE" = "sleep" ] ; then UPD_MV_ARR 1 2 "$MUSIC"
-        elif [ "$PLAYLIST_TYPE" = "dope" ] ; then UPD_MV_ARR 1 3 "$MUSIC"
+        if [ "$PLAYLIST_TYPE" = "xx" ] ; then UPD_MV_ARR 0 0 "$MUSIC"
+        elif [ "$PLAYLIST_TYPE" = "sleep" ] ; then UPD_MV_ARR 0 1 "$MUSIC"
+        elif [ "$PLAYLIST_TYPE" = "dope" ] ; then UPD_MV_ARR 0 2 "$MUSIC"
         elif [ "$PLAYLIST_TYPE" = "lofi" ] ; then
             # if $LOFI is "-r" update the 2nd element of $MUSICVIDS_URLS with the 4th element of $PLAYLISTS, $VID type
-            if [[ $LOFI = "-r" || $LOFI = "--relax" ]] ; then UPD_MV_ARR 2 4 "$VID"
-            elif [[ $LOFI = "-s" || $LOFI = "--sleep" ]] ; then UPD_MV_ARR 2 5 "$VID"
+            if [[ $LOFI = "-r" || $LOFI = "--relax" ]] ; then UPD_MV_ARR 1 3 "$VID"
+            elif [[ $LOFI = "-s" || $LOFI = "--sleep" ]] ; then UPD_MV_ARR 1 4 "$VID"
             # else, display error message with $LOFI param given
             else WRONG_PARAM "$LOFI" ; fi
             # same logic
@@ -85,6 +85,7 @@ if [ "$TABS" ] ; then
         # update $DEV_URLS
         UPDATE_DEV
         # open chrome with all $DEV_URLS
+        CHR "${DEV_URLS[*]}"
     elif [[ "$TABS" = "-mv" || "$TABS" = "--musicvids" ]] ; then
         # create $PLAYLIST_TYPE 2nd param & $LOFI 3rd param
         PLAYLIST_TYPE=$2
@@ -116,7 +117,8 @@ if [ "$TABS" ] ; then
         UPDATE_MUSICVIDS
         # but open chrome with all the urls
         CHR "${MAIL_URLS[*]}" "${SOCIAL_URLS[*]}" "${MUSICVIDS_URLS[*]}" "${DEV_URLS[*]}"
+    elif [ -f "$TABS" ] ; then  CHR "$TABS"
     # else, open chrome with "$TABS" param
-    else CHR "$TABS" ; fi
+    else WRONG_PARAM "$TABS" ; fi
 # else, open chrome with root directory
 else CHR "$(pwd)" ; fi
