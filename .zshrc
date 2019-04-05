@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=SC1090
 
 # import .aliases dotfile if the file exist
 if [ -f ~/.aliases ] ; then . ~/.aliases ; fi
