@@ -15,7 +15,7 @@ source install.sh
 `install.sh` will:
 
 1. Synchronize **remote files** with **local files**:
-    > *remote* files are in the *repository*, *local* files are located in `/Users/you`
+    > *remote* files are in this *repository*, *local* files are located in `/Users/you`
     - if any specified file **doesn't exist**, it'll *create* it.
     - after that, sync all specified files
 2. Install [Homebrew](https://brew.sh/) and all its **formulae & casks**:
@@ -27,8 +27,10 @@ source install.sh
 
 `update.sh` will:
 
+> `source update.sh -f || source update.sh --forced` will automatically overwrite local files
+
 1. Synchronize **remote files** with **local files**:
-    > *remote* files are in the *repository*, *local* files are located in `/Users/you`
+   > *remote* files are in this *repository*, *local* files are located in `/Users/you`
     - if any specified file **doesn't exist**, it'll *create* it.
     - after that, sync all specified files
   
