@@ -3,7 +3,6 @@
 
 . bin/sync.sh
 
-
 if [[ "$1" == "-f" || "$1" == "--force" ]] ; then SYNC ;
 else
     clear ; read -r -p  "Overwrite existing files ? (y/n) " -n 1 ;
@@ -18,4 +17,4 @@ else
         elif [[ $RETURNED == "N" ||  $RETURNED == "n" ]] ; then echo "Execution stopped"
         else echo -e "\e[38;5;1m$RETURNED \e[38;5;15misn't an available value !" ; fi 
     fi
-fi;
+fi
