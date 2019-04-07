@@ -23,4 +23,9 @@ function SYNC () {
         --exclude "update.sh" \
         -avh --no-perms . ~;
     . ~;
+
+    for i in /usr/local/bin/.*
+    do
+        echo "$i"
+    done
 }
