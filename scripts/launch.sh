@@ -1,7 +1,8 @@
 #!/usr/local/bin/bash
+# shellcheck disable=SC1090
 
-. $HOME/.exports
-. $HOME/.functions
+. ~/.exports
+. ~/.functions
 
 
 # COLORS

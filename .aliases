@@ -17,6 +17,7 @@ alias gmc="gitmoji -c"
 alias kter="killall iTerm2"
 alias localsh="cd /usr/local/bin"
 alias vs="code ."
+alias upd="source update.sh"
 
 # DIRECTORIES
 alias apl="cd /Applications"
@@ -71,3 +72,10 @@ alias nrst="npm run start"
 alias nrsr="npm run serve"
 alias nrt="npm run test"
 alias nrw="npm run watch"
+
+# SVN
+alias sa="svn add"
+alias sco="svn checkout"
+alias sc="svn commit"
+alias su="svn update"
+alias sst="svn status"
