@@ -44,3 +44,11 @@ function trash() {
 	if [ "${#TRASH[@]}" -gt 0 ] ; then rm -rf ~/.Trash/* ; fi
 	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
 }
+
+function wdilt() {
+	NEW_DATE=$(date +"%m-%d-%y")
+	yarn deploy
+	git add .
+	git commit -m ":speech_balloon: $NEW_DATE"
+	gp
+}
