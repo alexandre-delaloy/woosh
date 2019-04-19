@@ -27,6 +27,7 @@ function SYNC () {
     rsync --exclude "bin/" \
         --exclude "scripts/" \
         --exclude ".git/" \
+        --exclude ".git" \
         --exclude ".zshrc" \
         --exclude "install.sh" \
         --exclude "LICENSE" \
