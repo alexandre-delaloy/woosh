@@ -1,27 +1,28 @@
 #!/bin/bash
 
-# GLOBAL
-# shortcut command 
-alias c=clear
-alias e=exit
-alias god=sudo
-alias grh="git reset --hard"
-alias k=killall
-alias lcl=localhost
-alias src=source
-alias del="rm -rf"
-alias tch=touch
-# many one-line commands
-alias cdc="cd && clear"
+# ONE-LETTER ★
+alias b=brew # vv
+alias c=clear # vv
+alias e=exit # vv
+alias f="rm -rf" # x
+alias h=custom_localhost # v
+alias k=custom_trash # v
+alias m=custom_mkdir # v
+alias o=custom_open # vv
+alias v=custom_vscode # v
+alias t=touch # vv
+alias x="cd && clear" # v
+alias z=custom_zip # vv
+
+# SHORTCUT COMMAND
 alias delds="sudo find . -name '.DS_Store' -type f -delete"
-alias gmc="gitmoji -c"
 alias kter="killall iTerm2"
+alias lh=localhost
 alias localsh="cd /usr/local/bin"
-alias vs="code ."
 alias upd="source update.sh"
 
 # DIRECTORIES
-alias apl="cd /Applications"
+alias app="cd /Applications"
 alias dev="cd ~/Dev"
 alias doc="cd ~/Documents"
 alias dll="cd ~/Downloads"
@@ -32,6 +33,10 @@ alias bye="sudo shutdown -h now"
 
 # REBOOT
 alias rbt="sudo shutdown -r now"
+
+# GIT
+alias gmc="gitmoji -c"
+alias grh="git reset --hard"
 
 # PACKAGE MANAGER
 alias ny="npm i && yarn"

@@ -16,10 +16,33 @@ function apps() { for i in "${APPS[@]}" ; do
 done ; }
 
 # create a host with specific port
-function host() { php -S localhost:"$1" ; }
+function custom_localhost() { php -S localhost:"$1" ; }
 
 # create a new folder and go into it
-function mkd() { mkdir -p "$@" ; cd "$_" || exit ; }
+function custom_mkdir() { mkdir -p "$@" ; cd "$_" || exit ; }
+
+# open pwd directory by default, or specified file, directory or application
+function custom_open() {
+	if [ $# -eq 0 ] ; then open . ;
+	else open "$@" ; fi ;
+}
+
+# delete all trash content
+function custom_trash() {
+	TRASH="$HOME/.Trash/*"
+	TRASH_DOT="$HOME/.Trash/.*"
+	if [ "${#TRASH[@]}" -gt 0 ] ; then rm -rf ~/.Trash/* ; fi
+	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
+}
+
+function custom_vscode() {
+	if [ $# -eq 0 ] ; then code . ;
+	else code "$@" ; fi ;
+}
+
+function custom_zip() {
+	zip -r "$1.zip" "$1";
+}
 
 # create a new bash script
 function newsh() {
@@ -28,22 +51,10 @@ function newsh() {
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
 
-# open pwd directory by default, or specified file, directory or application
-function o() {
-	if [ $# -eq 0 ] ; then open . ;
-	else open "$@" ; fi ;
-}
+
 
 # launch oShi Discord bot server
 function oShi() { pm2 start ~/Dev/OWN/TOOLS/oShi/app.js --watch ; }
-
-# delete all trash content
-function trash() {
-	TRASH="$HOME/.Trash/*"
-	TRASH_DOT="$HOME/.Trash/.*"
-	if [ "${#TRASH[@]}" -gt 0 ] ; then rm -rf ~/.Trash/* ; fi
-	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
-}
 
 function wdilt() {
 	NEW_DATE=$(date +"%m-%d-%y")
