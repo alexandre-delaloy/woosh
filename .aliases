@@ -15,6 +15,7 @@ alias x="cd && clear" # v
 alias z=custom_zip # vv
 
 # SHORTCUT COMMAND
+alias cpwd="pwd | pbcopy"
 alias delds="sudo find . -name '.DS_Store' -type f -delete"
 alias kter="killall iTerm2"
 alias lh=localhost
