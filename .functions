@@ -4,8 +4,8 @@
 function acp() {
 	MSG="$*"
 	git add . 
-	echo "Custom commit message:" ; read -r MSG ; git commit -m "$MSG"
-	git push
+	echo "Commit message:" ; read -r MSG ; git commit -m "$MSG"
+	exit # git push
 }
 
 # open specific apps
