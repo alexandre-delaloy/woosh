@@ -4,8 +4,8 @@
 function f_acp() {
 	MSG="$*"
 	git add . 
-	printf "Commit message:" ; read -r MSG ; git commit -m "$MSG"
-	exit # git push
+	printf "Commit message:" ; read -r -p MSG ; git commit -m "$MSG"
+	git push
 }
 
 # open specific apps
@@ -15,8 +15,7 @@ function f_apps() { for i in "${APPS[@]}" ; do
 	echo -e "\e[38;5;15m$i's launched ! \e[38;5;47m[v]" ; sleep 1
 done ; }
 
-# create a host with specific port
-
+# create a new localhost with specific port
 function f_host() {
     if [ "$*" ] ; then php -S localhost:"$1" ; 
     else php -S localhost:8000 ; fi
@@ -39,11 +38,13 @@ function f_trash() {
 	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
 }
 
+# open Visual Studio code with given param, otherwise open the current directory
 function f_code() {
 	if [ $# -eq 0 ] ; then code . ;
 	else code "$@" ; fi ;
 }
 
+# zip the given folder
 function f_zip() {
 	zip -r "$1.zip" "$1";
 }
@@ -55,11 +56,10 @@ function newsh() {
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
 
-
-
 # launch oShi Discord bot server
 function oShi() { pm2 start ~/Dev/OWN/TOOLS/oShi/app.js --watch ; }
 
+# custom commit for https://github.com/blyndusk/wdilt repository
 function wdilt() {
 	NEW_DATE=$(date +"%m-%d-%y")
 	yarn deploy
