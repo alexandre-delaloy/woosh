@@ -8,4 +8,4 @@ if [ -f ~/.exports ] ; then . ~/.exports ; fi
 # import .functions dotfile if the file exist
 if [ -f ~/.functions ] ; then . ~/.functions ; fi
 # import .powerlevel9k dotfile if the file exist
-if [ -f ~/.powerlevel9k ] ; then . ~/.powerlevel9k ; fi
+# if [ -f ~/.powerlevel9k ] ; then . ~/.powerlevel9k ; fi
