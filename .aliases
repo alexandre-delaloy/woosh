@@ -4,23 +4,29 @@
 alias b=brew # vv
 alias c=clear # vv
 alias e=exit # vv
-alias f="rm -rf" # x
-alias h=custom_localhost # v
-alias k=custom_trash # v
-alias m=custom_mkdir # v
-alias o=custom_open # vv
-alias v=custom_vscode # v
+alias del="rm -rf" # x
 alias t=touch # vv
-alias x="cd && clear" # v
-alias z=custom_zip # vv
+alias cdc="cd && clear" # v
+
+# FUNCTIONS
+alias acp="f_acp"
+alias apps="f_apps"
+alias host="f_host"
+alias mkd="f_mkdir"
+alias o="f_open"
+alias trash="f_trash"
+alias vs="f_code"
+alias z="f_zip"
 
 # SHORTCUT COMMAND
 alias cpwd="pwd | pbcopy"
 alias delds="sudo find . -name '.DS_Store' -type f -delete"
+alias host="f_host"
 alias kter="killall iTerm2"
 alias lh=localhost
 alias localsh="cd /usr/local/bin"
 alias upd="source update.sh"
+alias trash="f_trash"
 
 # DIRECTORIES
 alias app="cd /Applications"

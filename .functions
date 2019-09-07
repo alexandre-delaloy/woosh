@@ -1,46 +1,50 @@
 #!/bin/bash
 
-# add, commit & push with custom message
-function acp() {
+# add, commit & push with  message
+function f_acp() {
 	MSG="$*"
 	git add . 
-	echo "Commit message:" ; read -r MSG ; git commit -m "$MSG"
+	printf "Commit message:" ; read -r MSG ; git commit -m "$MSG"
 	exit # git push
 }
 
 # open specific apps
-function apps() { for i in "${APPS[@]}" ; do 
+function f_apps() { for i in "${APPS[@]}" ; do 
 	echo -e "\e[38;5;15m$i's launching ... \e[38;5;196m[x]"
 	open -a "$i" ; sleep 1
 	echo -e "\e[38;5;15m$i's launched ! \e[38;5;47m[v]" ; sleep 1
 done ; }
 
 # create a host with specific port
-function custom_localhost() { php -S localhost:"$1" ; }
+
+function f_host() {
+    if [ "$*" ] ; then php -S localhost:"$1" ; 
+    else php -S localhost:8000 ; fi
+}
 
 # create a new folder and go into it
-function custom_mkdir() { mkdir -p "$@" ; cd "$_" || exit ; }
+function f_mkdir() { mkdir -p "$@" ; cd "$_" || exit ; }
 
 # open pwd directory by default, or specified file, directory or application
-function custom_open() {
+function f_open() {
 	if [ $# -eq 0 ] ; then open . ;
 	else open "$@" ; fi ;
 }
 
 # delete all trash content
-function custom_trash() {
+function f_trash() {
 	TRASH="$HOME/.Trash/*"
 	TRASH_DOT="$HOME/.Trash/.*"
 	if [ "${#TRASH[@]}" -gt 0 ] ; then rm -rf ~/.Trash/* ; fi
 	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
 }
 
-function custom_vscode() {
+function f_code() {
 	if [ $# -eq 0 ] ; then code . ;
 	else code "$@" ; fi ;
 }
 
-function custom_zip() {
+function f_zip() {
 	zip -r "$1.zip" "$1";
 }
 
@@ -63,3 +67,4 @@ function wdilt() {
 	git commit -m ":speech_balloon: $NEW_DATE"
 	gp
 }
+
