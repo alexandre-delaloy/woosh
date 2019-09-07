@@ -4,9 +4,7 @@
 alias b=brew # vv
 alias c=clear # vv
 alias e=exit # vv
-alias del="rm -rf" # x
 alias t=touch # vv
-alias cdc="cd && clear" # v
 
 # FUNCTIONS
 alias acp="f_acp"
@@ -19,21 +17,22 @@ alias vs="f_code"
 alias z="f_zip"
 
 # SHORTCUT COMMAND
+alias cdc="cd && clear" # v
 alias cpwd="pwd | pbcopy"
-alias delds="sudo find . -name '.DS_Store' -type f -delete"
+alias del="rm -rf" # x
 alias host="f_host"
 alias kter="killall iTerm2"
 alias lh=localhost
-alias localsh="cd /usr/local/bin"
-alias upd="source update.sh"
+alias rmds="find ~ -type f -not -path '*Library*' -name '.DS_Store' -delete"
 alias trash="f_trash"
+alias upd="source update.sh"
 
 # DIRECTORIES
-alias app="cd /Applications"
+alias apps="cd /Applications"
 alias dev="cd ~/Dev"
-alias doc="cd ~/Documents"
+alias docs="cd ~/Documents"
 alias dll="cd ~/Downloads"
-alias dsk="cd ~/Desktop"
+alias desk="cd ~/Desktop"
 
 # SHUTDOWN
 alias bye="sudo shutdown -h now"
