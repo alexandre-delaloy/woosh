@@ -30,6 +30,13 @@ function f_open() {
 	else open "$@" ; fi ;
 }
 
+function f_rmdll() {
+    DLL="$HOME/Downloads/*"
+	DLL_DOT="$HOME/Downloads/.*"
+	if [ "${#DLL[@]}" -gt 0 ] ; then rm -rf ~/Downloads/* ; fi
+	if [ "${#DLL_DOT[@]}" -gt 0 ] ; then rm -rf ~/Downloads/.* ; fi
+}
+
 # delete all trash content
 function f_trash() {
 	TRASH="$HOME/.Trash/*"
