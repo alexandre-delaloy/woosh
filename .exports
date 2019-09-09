@@ -16,6 +16,7 @@ export BREW_FORMULAES=(
     # tools
     shellcheck
     tree
+    htop
     # IDE
     vim
 )
