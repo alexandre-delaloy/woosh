@@ -9,6 +9,7 @@ alias t=touch # vv
 # FUNCTIONS
 alias acp="f_acp"
 alias apps="f_apps"
+alias ch="f_clean_history"
 alias host="f_host"
 alias mkd="f_mkdir"
 alias o="f_open"

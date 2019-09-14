@@ -15,6 +15,16 @@ function f_apps() { for i in "${APPS[@]}" ; do
 	echo -e "\e[38;5;15m$i's launched ! \e[38;5;47m[v]" ; sleep 1
 done ; }
 
+#
+function f_clean_history() {
+    if [ "$1" == "--zsh" ] ; then printf "\n" > .zsh_history
+    elif [ "$1" == "--bash" ] ; then printf "\n" > .bash_history
+    else 
+        printf "\n" > .zsh_history
+        printf "\n" > .bash_history 
+    fi
+}
+
 # create a new localhost with specific port
 function f_host() {
     if [ "$*" ] ; then php -S localhost:"$1" ; 
