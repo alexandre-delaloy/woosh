@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ONE-LETTER ★
-alias b=brew # vv
-alias c=clear # vv
-alias e=exit # vv
-alias t=touch # vv
+alias b=brew # 
+alias c=clear # 
+alias e=exit #
+alias t=touch #
 
 # FUNCTIONS
 alias acp="f_acp"
@@ -13,20 +13,19 @@ alias ch="f_clean_history"
 alias host="f_host"
 alias mkd="f_mkdir"
 alias o="f_open"
+alias rmdll="f_rmdll"
 alias trash="f_trash"
 alias vs="f_code"
 alias z="f_zip"
 
 # SHORTCUT COMMAND
-alias cdc="cd && clear" # v
+alias cdc="cd && clear"
 alias cpwd="pwd | pbcopy"
-alias del="rm -rf" # x
-alias host="f_host"
+alias dk="docker"
+alias del="rm -rf"
 alias kter="killall iTerm2"
 alias lh=localhost
-alias rmdll="f_rmdll"
 alias rmds="find ~ -type f -not -path '*Library*' -name '.DS_Store' -delete"
-alias trash="f_trash"
 alias upd="source update.sh"
 
 # DIRECTORIES
