@@ -8,13 +8,6 @@ function f_acp() {
 	git push
 }
 
-# open specific apps
-function f_apps() { for i in "${APPS[@]}" ; do 
-	echo -e "\e[38;5;15m$i's launching ... \e[38;5;196m[x]"
-	open -a "$i" ; sleep 1
-	echo -e "\e[38;5;15m$i's launched ! \e[38;5;47m[v]" ; sleep 1
-done ; }
-
 #
 function f_clean_history() {
     if [ "$1" = "--zsh" ] ; then printf "\n" > .zsh_history
@@ -72,9 +65,6 @@ function newsh() {
 	touch "$FILE" ; chmod a+rx "$FILE"
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
-
-# launch oShi Discord bot server
-function oShi() { pm2 start ~/Dev/OWN/TOOLS/oShi/app.js --watch ; }
 
 # custom commit for https://github.com/blyndusk/wdilt repository
 function wdilt() {
