@@ -102,3 +102,10 @@ alias sco="svn checkout"
 alias sc="svn commit"
 alias su="svn update"
 alias sst="svn status"
+
+# Firebase
+
+alias fb="firebase"
+alias fbi="firebase init"
+alias fbs="firebase serve"
+alias fbw="firebase watch"
