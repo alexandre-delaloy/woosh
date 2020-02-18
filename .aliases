@@ -25,7 +25,7 @@ alias dk="docker"
 alias del="rm -rf"
 alias kter="killall iTerm2"
 alias lh=localhost
-alias rmds="find ~ -type f -not -path '*Library*' -name '.DS_Store' -delete"
+alias rmds="find ./ -type f -not -path '*Library*' -name '.DS_Store' -delete"
 alias upd="source update.sh"
 
 # DIRECTORIES
