@@ -61,6 +61,7 @@ alias n=npm                                     #
 alias ni="npm i"                                #
 alias nid="npm i --save-dev"                    #
 alias nig="npm i -g"                            #
+alias nist="npm i ; npm run start"              #
 #                                               #
 alias nu="npm uninstall"                        #
 alias nug="npm uninstall -g"                    #
