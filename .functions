@@ -1,51 +1,84 @@
 #!/bin/bash
 
-# add, commit & push with  message
+# add, commit & push with custom commt message
 function f_acp() {
 	MSG="$*"
 	git add . 
-	printf "Commit message:" ; read -r -p MSG ; git commit -m "$MSG"
+	printf "Commit message:"
+  read -r -p MSG
+  git commit -m "$MSG"
 	git push
 }
 
-#
+# clean bash & zsh history file
 function f_clean_history() {
-    if [ "$1" = "--zsh" ] ; then printf "\n" > .zsh_history
-    elif [ "$1" = "--bash" ] ; then printf "\n" > .bash_history
-    else 
-        printf "\n" > .zsh_history
-        printf "\n" > .bash_history 
-    fi
+  if [ "$1" = "--zsh" ] ; then 
+    printf "\n" > .zsh_history
+  elif [ "$1" = "--bash" ] ; 
+    then printf "\n" > .bash_history
+  else 
+    printf "\n" > .zsh_history
+    printf "\n" > .bash_history 
+  fi
+}
+
+# (git) clone a repository by name using ssh & go into it
+function f_gclcd() {
+  git clone "git@github.com:blyndusk/$1.git"
+  cd $1
 }
 
 # create a new localhost with specific port
 function f_host() {
-    if [ "$*" ] ; then php -S localhost:"$1" ; 
-    else php -S localhost:8000 ; fi
+  if [ "$*" ] ; then 
+    php -S localhost:"$1"
+  else 
+    php -S localhost:8000
+  fi
 }
 
-# create a new folder and go into it
-function f_mkdir() { mkdir -p "$@" ; cd "$_" || exit ; }
+# create a new folder & go into it
+function f_mkdir() { 
+  mkdir -p "$@"
+  cd "$_" || exit
+}
 
 # open pwd directory by default, or specified file, directory or application
 function f_open() {
-	if [ $# -eq 0 ] ; then open . ;
-	else open "$@" ; fi ;
+	if [ $# -eq 0 ] ; then 
+    open .
+	else 
+    open "$@"
+  fi
 }
 
+# delete the downloaded files
 function f_rmdll() {
-    DLL="$HOME/Downloads/*"
+  DLL="$HOME/Downloads/*"
 	DLL_DOT="$HOME/Downloads/.*"
-	if [ "${#DLL[@]}" -gt 0 ] ; then rm -rf ~/Downloads/* ; fi
-	if [ "${#DLL_DOT[@]}" -gt 0 ] ; then rm -rf ~/Downloads/.* ; fi
+	if [ "${#DLL[@]}" -gt 0 ] ; then 
+    rm -rf ~/Downloads/*
+  fi
+	if [ "${#DLL_DOT[@]}" -gt 0 ] ; then 
+    rm -rf ~/Downloads/.*
+  fi
+}
+
+# delete all the .DS_Store in the directory
+function f_rmds() {
+  find ./ -type f -not -path '*Library*' -name '.DS_Store' -delete
 }
 
 # delete all trash content
 function f_trash() {
 	TRASH="$HOME/.Trash/*"
 	TRASH_DOT="$HOME/.Trash/.*"
-	if [ "${#TRASH[@]}" -gt 0 ] ; then rm -rf ~/.Trash/* ; fi
-	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then rm -rf ~/.Trash/.* ; fi
+	if [ "${#TRASH[@]}" -gt 0 ] ; then
+    rm -rf ~/.Trash/*
+  fi
+	if [ "${#TRASH_DOT[@]}" -gt 0 ] ; then
+    rm -rf ~/.Trash/.*
+  fi
 }
 
 # open Visual Studio code with given param, otherwise open the current directory
@@ -65,13 +98,3 @@ function newsh() {
 	touch "$FILE" ; chmod a+rx "$FILE"
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
-
-# custom commit for https://github.com/blyndusk/wdilt repository
-function wdilt() {
-	NEW_DATE=$(date +"%m-%d-%y")
-	yarn deploy
-	git add .
-	git commit -m ":speech_balloon: $NEW_DATE"
-	gp
-}
-
