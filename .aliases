@@ -135,9 +135,9 @@ alias gmc="gitmoji -c"                          #
 alias grh="git reset --hard"                    #
 #                                               #
 #-[terraform]-----------------------------------#
-alias tfa="terraform init"                      #
-alias tfa="terraform plan"                      #
+alias tfi="terraform init"                      #
+alias tfp="terraform plan"                      #
 alias tfa="terraform apply"                     #
-alias tfa="terraform destroy"                   #
+alias tfd="terraform destroy"                   #
 #                                               #
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
