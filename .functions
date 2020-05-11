@@ -98,3 +98,10 @@ function newsh() {
 	touch "$FILE" ; chmod a+rx "$FILE"
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
+
+function chsh() {
+  local pwd=/Users/alexandre.delaloy/_/PERSO/cheatsheets/
+  cd $pwd
+  source ${pwdd}woo.sh
+  cd -
+}
