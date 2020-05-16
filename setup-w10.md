@@ -1,21 +1,48 @@
 # Windows Terminal Setup
 
+- [Windows Terminal Setup](#windows-terminal-setup)
+  - [I - Install Windows Terminal](#i---install-windows-terminal)
+  - [II - Install Git](#ii---install-git)
+  - [III - Install Ubuntu Shell for Windows Terminal](#iii---install-ubuntu-shell-for-windows-terminal)
+    - [1. Install the Windows Subsystem for Linux (WSL)](#1-install-the-windows-subsystem-for-linux-wsl)
+    - [2. Enable the 'Virtual Machine Platform' optional component](#2-enable-the-virtual-machine-platform-optional-component)
+    - [3. Install Ubuntu Shell for Windows 10](#3-install-ubuntu-shell-for-windows-10)
+    - [4. Verify if Ubuntu Shell is correctly installed](#4-verify-if-ubuntu-shell-is-correctly-installed)
+    - [5. Set Ubuntu Shell as default](#5-set-ubuntu-shell-as-default)
+  - [IV - Install Fira Code font for Windows and add to Ubuntu Shell in Windows Terminal](#iv---install-fira-code-font-for-windows-and-add-to-ubuntu-shell-in-windows-terminal)
+    - [1. Install Chocolatery](#1-install-chocolatery)
+    - [2. Install FiraCode font via `choco`](#2-install-firacode-font-via-choco)
+    - [3. Verify the installation success](#3-verify-the-installation-success)
+    - [4. Add Fira Code font to Ubuntu Shell in Windows Terminal](#4-add-fira-code-font-to-ubuntu-shell-in-windows-terminal)
+  - [V - Configure GitHub in Ubuntu Shell](#v---configure-github-in-ubuntu-shell)
+    - [1. Configure user](#1-configure-user)
+    - [2. Add new SSH key for authentification](#2-add-new-ssh-key-for-authentification)
+  - [VI - Install Zsh and Oh-My-Zsh on Ubuntu Shell](#vi---install-zsh-and-oh-my-zsh-on-ubuntu-shell)
+    - [1. Install Zsh](#1-install-zsh)
+    - [2. Install Oh-My-Zsh](#2-install-oh-my-zsh)
+  - [VII - Add Zsh plugins](#vii---add-zsh-plugins)
+    - [1. zsh-autosuggestions](#1-zsh-autosuggestions)
+  - [VIII - Add a zsh theme (here: spaceship-prompt)](#viii---add-a-zsh-theme-here-spaceship-prompt)
+    - [1. Install (via Oh-My-Zsh)](#1-install-via-oh-my-zsh)
+      - [Clone](#clone)
+    - [2. Update `.zshrc`](#2-update-zshrc)
+
 ## I - Install Windows Terminal
 
 > [Windows Terminal - Windows Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
 
 ## II - Install Git
-
+S
 > [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
-## III - Install Linux Shell for Windows Terminal
+## III - Install Ubuntu Shell for Windows Terminal
 
 ### 1. Install the Windows Subsystem for Linux (WSL)
 
 Open PowerShell as Administrator and run:
 
 ```PowerShell
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Ubuntu /all /norestart
 ```
 
 ### 2. Enable the 'Virtual Machine Platform' optional component
@@ -31,18 +58,23 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 - [Install Ubuntu Shell for Windows - Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab)
 - Open the Ubuntu Shell and set up a new distribution ( UNIX user )
 
-### 4. Verify if Linux Shell is correctly installed
+### 4. Verify if Ubuntu Shell is correctly installed
 
 ```JSON
- {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            }
+{
+  "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+  "hidden": false,
+  "name": "Ubuntu",
+  "source": "Windows.Terminal.Wsl"
+}
 ```
 
-##  IV - Install Fira Code font for Windows and add to Linux Shell in Windows Terminal
+### 5. Set Ubuntu Shell as default
+
+- Go to Settings (`Ctrl` + `+`)
+- Replace `"defaultProfile": "{OLD_GUID}",`<br>by `"defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",`
+
+## IV - Install Fira Code font for Windows and add to Ubuntu Shell in Windows Terminal
 
 ### 1. Install Chocolatery
 
@@ -62,12 +94,12 @@ Open PowerShell as Administrator and run:
 choco install firacode
 ```
 
-### 3. Verify the installation success 
+### 3. Verify the installation success
 
 - Go to `Settings > Personnalisation > Fonts`
 - Type `Fira Code` in the "Available Fonts" input and check for existence
 
-### 4. Add Fira Code font to Linux Shell in Windows Terminal
+### 4. Add Fira Code font to Ubuntu Shell in Windows Terminal
 
 - Open Windows Terminal
 - `Ctrl` + `+`
@@ -76,21 +108,20 @@ choco install firacode
 ```JSON
 "profiles": {
   "list": [
-{
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-		"fontFace": "Fira Code" // <-- here
-            }
-
+    {
+      "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+      "hidden": false,
+      "name": "Ubuntu",
+      "source": "Windows.Terminal.Wsl",
+      "fontFace": "Fira Code" // <-- here
+    }
   ]
 },
 ```
 
-### V - Configure GitHub in Linux Shell
+## V - Configure GitHub in Ubuntu Shell
 
-#### 1. Configure user
+### 1. Configure user
 
 ```bash
 git config --global user.name "username"
@@ -107,17 +138,58 @@ $ cat .gitconfig
   email = alexandre.delaloy.dev@gmail.com
 ```
 
-#### 2. Add new SSH key for authentification
+### 2. Add new SSH key for authentification
 
 > [Connecting to GitHub with SSH - GitHub](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
-- Test by cloning > modify > add > commit > push and look if you're identified in your repository.
+- Test with `ssh -T git@github.com`
+- Enter yes to `iAre you sure you want to continue connecting (yes/no/[fingerprint])?`
 
-enter yes to " contniAre you sure you want to continue connecting (yes/no/[fingerprint])? yes
+## VI - Install Zsh and Oh-My-Zsh on Ubuntu Shell
+
+> [Oh My Zsh](https://ohmyz.sh/)
+
+### 1. Install Zsh
+
+```bash
+sudo apt install zsh
+```
+
+### 2. Install Oh-My-Zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## VII - Add Zsh plugins
+
+### 1. zsh-autosuggestions
+
+
+
+## VIII - Add a zsh theme (here: spaceship-prompt)
+
+> [Spaceship Prompt](https://denysdovhan.com/spaceship-prompt/)
+
+### 1. Install (via Oh-My-Zsh)
+
+#### Clone
 
 
 
 
+```bash
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
 
+### 2. Update `.zshrc`
 
+```bash
+...
+10  ZSH_THEME="spaceship"
+...
+```
+
+Then `source ~/.zshrc` to update your prompt
