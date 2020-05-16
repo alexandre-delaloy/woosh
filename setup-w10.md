@@ -22,9 +22,16 @@
     - [2. Install Oh-My-Zsh](#2-install-oh-my-zsh)
   - [VII - Add Zsh plugins](#vii---add-zsh-plugins)
     - [1. zsh-autosuggestions](#1-zsh-autosuggestions)
-  - [VIII - Add a zsh theme (here: spaceship-prompt)](#viii---add-a-zsh-theme-here-spaceship-prompt)
-    - [1. Install (via Oh-My-Zsh)](#1-install-via-oh-my-zsh)
       - [Clone](#clone)
+      - [Add plugin](#add-plugin)
+      - [Add permission](#add-permission)
+    - [2. zsh-syntax-highlighting](#2-zsh-syntax-highlighting)
+      - [Clone](#clone-1)
+      - [Add plugin](#add-plugin-1)
+      - [Add permission](#add-permission-1)
+    - [3. Update prompt](#3-update-prompt)
+  - [VIII - install an advanced zsh theme (here: spaceship-prompt)](#viii---install-an-advanced-zsh-theme-here-spaceship-prompt)
+    - [1. Install (via Oh-My-Zsh)](#1-install-via-oh-my-zsh)
     - [2. Update `.zshrc`](#2-update-zshrc)
 
 ## I - Install Windows Terminal
@@ -165,18 +172,67 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### 1. zsh-autosuggestions
 
+> [https://github.com/zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
+#### Clone
 
-## VIII - Add a zsh theme (here: spaceship-prompt)
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+#### Add plugin
+
+```bash
+plugins=(
+  ...
+  zsh-autosuggestions
+  ...
+)
+```
+
+#### Add permission 
+
+```
+chmod 755 /home/$USER/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+```
+
+### 2. zsh-syntax-highlighting
+
+> [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+#### Clone
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+#### Add plugin
+
+```bash
+plugins=(
+  ...
+  zsh-syntax-highlighting
+  ...
+)
+```
+
+#### Add permission 
+
+```
+chmod 755 /home/$USER/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+
+### 3. Update prompt
+
+```bash
+source ~/.zshrc
+```
+
+## VIII - install an advanced zsh theme (here: spaceship-prompt)
 
 > [Spaceship Prompt](https://denysdovhan.com/spaceship-prompt/)
 
 ### 1. Install (via Oh-My-Zsh)
-
-#### Clone
-
-
-
 
 ```bash
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
