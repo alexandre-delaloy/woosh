@@ -33,6 +33,7 @@
   - [VIII - install an advanced zsh theme (here: spaceship-prompt)](#viii---install-an-advanced-zsh-theme-here-spaceship-prompt)
     - [1. Install (via Oh-My-Zsh)](#1-install-via-oh-my-zsh)
     - [2. Update `.zshrc`](#2-update-zshrc)
+    - [3. Update prompt](#3-update-prompt-1)
 
 ## I - Install Windows Terminal
 
@@ -248,4 +249,8 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 ...
 ```
 
-Then `source ~/.zshrc` to update your prompt
+### 3. Update prompt
+
+```bash
+source ~/.zshrc
+```
