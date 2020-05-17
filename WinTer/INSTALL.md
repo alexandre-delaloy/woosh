@@ -1,7 +1,7 @@
 # Windows Terminal Setup
 
 - [Windows Terminal Setup](#windows-terminal-setup)
-  - [I - Install Windows Terminal](#i---install-windows-terminal)
+  - [I - Install Windows Terminal and Visual Studio Code](#i---install-windows-terminal-and-visual-studio-code)
   - [II - Install Git](#ii---install-git)
   - [III - Install Ubuntu Shell for Windows Terminal](#iii---install-ubuntu-shell-for-windows-terminal)
     - [1. Install the Windows Subsystem for Linux (WSL)](#1-install-the-windows-subsystem-for-linux-wsl)
@@ -9,11 +9,13 @@
     - [3. Install Ubuntu Shell for Windows 10](#3-install-ubuntu-shell-for-windows-10)
     - [4. Verify if Ubuntu Shell is correctly installed](#4-verify-if-ubuntu-shell-is-correctly-installed)
     - [5. Set Ubuntu Shell as default](#5-set-ubuntu-shell-as-default)
+    - [6. Set Ubuntu Shell as default integrated Shell in VScode](#6-set-ubuntu-shell-as-default-integrated-shell-in-vscode)
   - [IV - Install Fira Code font for Windows and add to Ubuntu Shell in Windows Terminal](#iv---install-fira-code-font-for-windows-and-add-to-ubuntu-shell-in-windows-terminal)
     - [1. Install Chocolatery](#1-install-chocolatery)
     - [2. Install FiraCode font via `choco`](#2-install-firacode-font-via-choco)
     - [3. Verify the installation success](#3-verify-the-installation-success)
     - [4. Add Fira Code font to Ubuntu Shell in Windows Terminal](#4-add-fira-code-font-to-ubuntu-shell-in-windows-terminal)
+    - [5. Add Fira Code font to VScode and VScode integrated terminal](#5-add-fira-code-font-to-vscode-and-vscode-integrated-terminal)
   - [V - Configure GitHub in Ubuntu Shell](#v---configure-github-in-ubuntu-shell)
     - [1. Configure user](#1-configure-user)
     - [2. Add new SSH key for authentification](#2-add-new-ssh-key-for-authentification)
@@ -35,12 +37,14 @@
     - [2. Update `.zshrc`](#2-update-zshrc)
     - [3. Update prompt](#3-update-prompt-1)
 
-## I - Install Windows Terminal
+## I - Install Windows Terminal and Visual Studio Code
 
 > [Windows Terminal - Windows Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
 
+> [Visual Studio Code - Microsoft](https://code.visualstudio.com/download)
+
 ## II - Install Git
-S
+
 > [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
 ## III - Install Ubuntu Shell for Windows Terminal
@@ -81,6 +85,11 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 - Go to Settings (`Ctrl` + `+`)
 - Replace `"defaultProfile": "{OLD_GUID}",`<br>by `"defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",`
+
+### 6. Set Ubuntu Shell as default integrated Shell in VScode
+
+- `Ctrl`+ `Shift`+ `P` > "Terminal: Set Default Shell"
+- Select `WSL Bash C:\WINDOWS\System32\wsl.exe`
 
 ## IV - Install Fira Code font for Windows and add to Ubuntu Shell in Windows Terminal
 
@@ -125,6 +134,20 @@ choco install firacode
     }
   ]
 },
+```
+
+### 5. Add Fira Code font to VScode and VScode integrated terminal
+
+`Ctrl`+ `Shift`+ `P` > "Preferences: Open Settings (JSON)"
+
+```JSON
+{
+  ...
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "Fira Code",
+  ...
+}
 ```
 
 ## V - Configure GitHub in Ubuntu Shell
@@ -254,3 +277,4 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 ```bash
 source ~/.zshrc
 ```
+
