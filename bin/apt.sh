@@ -6,4 +6,8 @@ UPDATE_APT_PACKAGES
 
 UPGRADE_APT_PACKAGES
 
-sudo apt install curl git htop
+INSTALL_PACKAGE curl
+
+INSTALL_PACKAGE git
+
+INSTALL_PACKAGE htop
