@@ -2,7 +2,7 @@
 
 source bin/ui.sh
 
-export function UPDATE_APT_PACKAGES() {
+function UPDATE_APT_PACKAGES() {
   COMMAND_STATUS '-' "apt update"
   sudo apt update
   if [[ "$?" = 0 ]] ; then
@@ -14,7 +14,7 @@ export function UPDATE_APT_PACKAGES() {
   fi
 }
 
-export function UPGRADE_APT_PACKAGES() {
+function UPGRADE_APT_PACKAGES () {
   COMMAND_STATUS '-' "apt upgrade"
   sudo apt upgrade
   if [[ "$?" = 0 ]] ; then
@@ -26,30 +26,29 @@ export function UPGRADE_APT_PACKAGES() {
   fi
 }
 
-
 function INSTALL_STATUS() {
   if [[ "$1" = "x" ]] ; then
-    echo "$(red '[x]') $(blue $2) $(red 'not installed.')"
+    echo "$(red '[x]') $(blue "$2") $(red 'not installed.')"
   elif  [[ "$1" = "-" ]] ; then
-    echo "$(yellow '[-]') $(blue $2) $(yellow 'installing...')"
+    echo "$(yellow '[-]') $(blue "$2") $(yellow 'installing...')"
   elif  [[ "$1" = "v" ]] ; then
-    echo "$(green '[v]') $(blue $2) $(green 'successfully installed !')"
+    echo "$(green '[v]') $(blue "$2") $(green 'successfully installed !')"
   fi 
 }
 
 function COMMAND_STATUS() {
   if [[ "$1" = "x" ]] ; then
-    echo "$(red '[x]') $(blue $2) $(red 'failed.')"
+    echo "$(red '[x]') $(blue "$2") $(red 'failed.')"
   elif  [[ "$1" = "-" ]] ; then
-    echo "$(yellow '[-]') $(blue $2) $(yellow 'running...')"
+    echo "$(yellow '[-]') $(blue "$2") $(yellow 'running...')"
   elif  [[ "$1" = "v" ]] ; then
-    echo "$(green '[v]') $(blue $2) $(green 'succeed !')"
+    echo "$(green '[v]') $(blue "$2") $(green 'succeed !')"
   fi 
 }
 
 function INSTALL_PACKAGE() {
   INSTALL_STATUS '-' \'"$1"\'
-  sudo apt install $1
+  sudo apt install "$1"
   if [[ "$?" = 0 ]] ; then
     INSTALL_STATUS 'v' \'"$1"\'
     return 0;
@@ -60,7 +59,7 @@ function INSTALL_PACKAGE() {
 }
 
 function CHECK_COMMAND_INSTALLATION() {
-  which $1 > /dev/null 2>&1
+  which "$1" > /dev/null 2>&1
   if [[ "$?" = 0 ]] ; then
     INSTALL_STATUS 'v' \'"$1"\'
     return 0;
