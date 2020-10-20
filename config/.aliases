@@ -1,0 +1,132 @@
+#!/bin/bash
+
+# GLOBAL --------------------------------------------------
+
+# COMMANDS
+alias apb=ansible-playbook
+alias b=brew
+alias c=clear
+alias dk=docker
+alias dkc=docker-compose
+alias e=exit
+alias fb=firebase
+alias lh=localhost
+alias t=touch
+alias tf=terraform
+
+# CUSTOM COMMANDS
+alias cdc="cd ; clear"
+alias cpwd="pwd | pbcopy"
+alias del="rm -rf"
+alias kter="killall iTerm2 ; open -a iTerm2"
+
+# FUNCTIONS
+alias acp="f_acp"
+alias apps="f_apps"
+alias ch="f_clean_history"
+alias gclcd="f_gclcd"
+alias host="f_host"
+alias mkd="f_mkdir"
+alias o="f_open"
+alias rmdll="f_rmdll"
+alias rmds="f_rmds"
+alias trash="f_trash"
+alias vs="f_code"
+alias z="f_zip"
+
+# DIRECTORIES
+alias apps="cd /Applications"
+alias dev="cd ~/Dev"
+alias docs="cd ~/Documents"
+alias dll="cd ~/Downloads"
+alias desk="cd ~/Desktop"
+
+# SHUTDOWN
+alias bye="sudo shutdown -h now"
+alias rbt="sudo shutdown -r now"
+
+# PACKAGE MANAGER -----------------------------------------
+
+# NPM
+alias n=npm
+
+alias ni="npm i"
+alias nid="npm i --save-dev"
+alias nig="npm i -g"
+alias nist="npm i ; npm run start"
+
+alias nu="npm uninstall"
+alias nug="npm uninstall -g"
+
+alias nb="npm run build"
+alias nc="npm run check"
+alias ndp="npm run deploy"
+alias ndv="npm run dev"
+alias ndc="npm run doc"
+alias ne="npm run eject"
+alias nl="npm run lint"
+alias nlf="npm run lint:fix"
+alias nst="npm run start"
+alias nsr="npm run serve"
+alias nt="npm run test"
+alias ntw="npm run test:watch"
+alias nw="npm run watch"
+
+# SVN
+alias sa="svn add"
+alias sco="svn checkout"
+alias sc="svn commit"
+alias su="svn update"
+alias sst="svn status"
+
+# YARN
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yga="yarn global add"
+
+alias yr="yarn remove"
+alias ygr="yarn global remove"
+
+alias yb="yarn build"
+alias yc="yarn check"
+alias ydp="yarn deploy"
+alias ydv="yarn dev"
+alias ydc="yarn doc"
+alias ye="yarn eject"
+alias yl="yarn lint"
+alias ylf="yarn lint:fix"
+alias yst="yarn start"
+alias ysr="yarn serve"
+alias yt="yarn test"
+alias ytw="yarn test:watch"
+alias yw="yarn watch"
+
+# SERVICES ------------------------------------------------
+
+# DOCKER
+alias dkc="docker ps -a"
+alias dki="docker images"
+alias dkcai="docker ps -a ; docker images"
+
+# DOCKER COMPOSE
+alias dkcc="docker-compose config"
+alias dkcu="docker-compose up"
+alias dkcd="docker-compose down"
+
+# FIREBASE
+alias fbi="firebase init"
+alias fbs="firebase serve"
+alias fbw="firebase watch"
+alias fbd="firebase deploy"
+
+# GIT
+alias ghst="git log --graph --oneline --decorate --all"
+alias gmc="gitmoji -c"
+alias grh="git reset --hard" 
+alias gstcl="git status -s -b"
+
+# TERRAFORM
+alias tfi="terraform init"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+alias tfd="terraform destroy"
