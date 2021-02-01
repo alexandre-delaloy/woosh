@@ -1,0 +1,34 @@
+#!/bin/bash
+
+export _APT_PACKAGE=(
+	curl
+	git
+	htop
+	shellcheck
+	tmux
+	xclip
+	zsh
+)
+
+export _SNAP_DEV_PACKAGES=(
+	code --classic
+  cool-retro-term --classic
+  kubectl --classic  
+  kontena-lens --classic 
+  postman
+  arduino
+)
+
+export _SNAP_CHAT_PACKAGES=(
+	slack --classic
+  teams
+  telegram-desktop
+  discord
+)
+
+export _SNAP_MISC_PACKAGES=(
+	vlc
+  gimp
+)
+
+/home/blyndusk/.ssh/github_ubuntu_asus
