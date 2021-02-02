@@ -40,7 +40,7 @@ function INSTALL_PACKAGE() {
 }
 function INSTALL_STATUS() {
   if [[ "$1" = "x" ]] ; then
-    echo -e "$(red '[x]') $(fblue "$2") $(red 'not installed.')"
+    echo "$(red '[x]') $(fblue "$2") $(red 'not installed.')"
   elif  [[ "$1" = "-" ]] ; then
     echo "$(yellow '[-]') $(fblue "$2") $(yellow 'installing...')"
   elif  [[ "$1" = "v" ]] ; then
