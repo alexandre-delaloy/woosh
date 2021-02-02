@@ -12,7 +12,6 @@ alias mkd="f_mkd"
 alias t="touch"
 
 # NAVIGATION
-alias -='cd -'
 alias ...=../..
 alias ....=../../..
 alias .....=../../../..
@@ -41,6 +40,8 @@ alias dk="docker"
 alias dkimg="docker images"
 alias dkctn="docker ps -a"
 alias dkimgctn="docker images ; docker ps -a"
+alias dkill="docker system prune --all --volumes --force" 
+
 
 # DOCKER-COMPOSE
 alias dkc="docker-compose"
