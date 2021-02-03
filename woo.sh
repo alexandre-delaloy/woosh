@@ -14,7 +14,7 @@ woosh() {
     -
     $(red "[0]") $(fred "Exit")
 
-  [0-4]: " -n 1 -r NUMBER
+  [0-3]: " -n 1 -r NUMBER
 
   if [[ $NUMBER -eq 1 ]] ; then
     echo "
@@ -30,10 +30,10 @@ woosh() {
     echo "
       "
     source bin/cp.sh
-  elif [[ $NUMBER -eq 4 ]] ; then
-    echo "
-      "
-    source bin/docker.sh
+  # elif [[ $NUMBER -eq 4 ]] ; then
+  #   echo "
+  #     "
+  #   source bin/docker.sh
   else
       return 0
   fi
