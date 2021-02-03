@@ -1,14 +1,6 @@
 #!/bin/bash
 
-# add, commit & push with custom commt message
-function f_acp() {
-	MSG="$*"
-	git add . 
-	printf "Commit message:"
-  read -r -p MSG
-  git commit -m "$MSG"
-	git push
-}
+
 
 # clean bash & zsh history file
 function f_clean_history() {
@@ -38,13 +30,13 @@ function f_host() {
 }
 
 # create a new folder & go into it
-function f_mkdir() { 
+function f_mkdr() { 
   mkdir -p "$@"
   cd "$_" || exit
 }
 
 # open pwd directory by default, or specified file, directory or application
-function f_open() {
+function f_o() {
 	if [ $# -eq 0 ] ; then 
     open .
 	else 

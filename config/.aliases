@@ -1,0 +1,127 @@
+#!/bin/bash
+
+source ~/.functions
+
+# MISC
+alias c="clear"
+alias cdc="cd ; clear"
+alias del="rm -rf"
+alias e="exit"
+alias o="f_o"
+alias mkd="f_mkd"
+alias t="touch"
+
+# NAVIGATION
+alias ...=../..
+alias ....=../../..
+alias .....=../../../..
+alias ......=../../../../..
+
+# DIRECTORIES
+alias docs="cd ~/Documents"
+alias dll="cd ~/Downloads"
+alias desk="cd ~/Desktop"
+
+# SYSTEM --------------------------------------------------
+
+# SHUTDOWN
+alias bye="sudo shutdown -h now"
+alias rbt="sudo shutdown -r now"
+
+# APT
+alias upd="sudo apt update"
+alias upg="sudo apt upgrade"
+alias updg="sudo apt update ; sudo apt upgrade"
+
+# SERVICES ------------------------------------------------
+
+# DOCKER
+alias dk="docker"
+alias dkimg="docker images"
+alias dkctn="docker ps -a"
+alias dkimgctn="docker images ; docker ps -a"
+alias dkill="docker system prune --all --volumes --force" 
+
+
+# DOCKER-COMPOSE
+alias dkc="docker-compose"
+alias dkcc="docker-compose config"
+alias dkcu="docker-compose up"
+alias dkcub="docker-compose up --build"
+alias dkcf="docker-compose up --build --remove-orphans --force-recereate"
+
+# KUBECTL
+alias k="kubectl"
+alias ka="kubectl apply"
+alias kcv="kubectl config view"
+alias kd="kubectl delete"
+alias kg="kubectl get"
+alias ks="kubectl set"
+
+# FIREBASE
+alias fbi="firebase init"
+alias fbs="firebase serve"
+alias fbw="firebase watch"
+alias fbd="firebase deploy"
+
+# GIT
+alias ghst="git log --graph --oneline --decorate --all"
+alias grh="git reset --hard" 
+alias gstcl="git status -s -b"
+
+# TERRAFORM
+alias tfi="terraform init"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+alias tfd="terraform destroy"
+
+alias shtop="sudo htop"
+alias kb="kubectl"
+
+# NPM
+alias n=npm
+alias ni="npm i"
+alias nid="npm i --save-dev"
+alias nig="npm i -g"
+alias nu="npm uninstall"
+alias nug="npm uninstall -g"
+alias nb="npm run build"
+alias nc="npm run check"
+alias ndp="npm run deploy"
+alias ndv="npm run dev"
+alias ndc="npm run doc"
+alias ne="npm run eject"
+alias nl="npm run lint"
+alias nlf="npm run lint:fix"
+alias nst="npm run start"
+alias nsr="npm run serve"
+alias nt="npm run test"
+alias ntw="npm run test:watch"
+alias nw="npm run watch"
+
+# YARN
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yga="yarn global add"
+alias yr="yarn remove"
+alias ygr="yarn global remove"
+alias yb="yarn build"
+alias yc="yarn check"
+alias ydp="yarn deploy"
+alias ydv="yarn dev"
+alias ydc="yarn doc"
+alias ye="yarn eject"
+alias yl="yarn lint"
+alias ylf="yarn lint:fix"
+alias yst="yarn start"
+alias ysr="yarn serve"
+alias yt="yarn test"
+alias ytw="yarn test:watch"
+alias yw="yarn watch"
+
+# SVN
+alias sa="svn add"
+alias sco="svn checkout"
+alias sc="svn commit"
+alias su="svn update"
+alias sst="svn status"
