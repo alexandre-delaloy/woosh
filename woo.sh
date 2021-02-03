@@ -4,13 +4,15 @@ source bin/colors.sh
 
 woosh() {
   read -p "
-  Hi $(fyellow "$(whoami)"). I'm $(fgreen "Woosh") $(green "(0.0)"), your personnal dotfile assistant. Choose what you wanna do:
+  Hi $(fyellow "$(whoami)"). I'm $(fgreen "Woosh") $(green "(0.0)"), your personal dotfile configuration assistant.
+  
+  Choose what you wanna do:
 
-    $(yellow "[1]") $(fyellow "Everything") below
-    $(yellow "[2]") Install 
-    $(yellow "[3]") Copy $(fyellow "dotfiless") (.aliases, .functions, etc..)
+    $(green "[1]") $(fgreen "Everything below")
+    $(yellow "[2]") Install $(fyellow "apt packages")
+    $(yellow "[3]") Copy $(fyellow "dotfiles") (.aliases, .functions, etc..)
     -
-    $(yellow "[0]") Exit
+    $(red "[0]") $(fred "Exit")
 
   [0-4]: " -n 1 -r NUMBER
 
