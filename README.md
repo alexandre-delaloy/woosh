@@ -12,6 +12,8 @@ git clone https://github.com/blyndusk/dotfiles.git
 chmod +x woo.sh
 ```
 
+![woosh](assets/woosh.jpg)
+
 ## II -  Use
 
 ```bash
