@@ -10,6 +10,7 @@ alias e="exit"
 alias o="f_o"
 alias mkd="f_mkd"
 alias t="touch"
+alias snc="f_snc"
 
 # NAVIGATION
 alias ...=../..
@@ -41,6 +42,8 @@ alias dkimg="docker images"
 alias dkctn="docker ps -a"
 alias dkimgctn="docker images ; docker ps -a"
 alias dkill="docker system prune --all --volumes --force" 
+alias dkt="docker tag"
+alias dkp="docker push"
 
 
 # DOCKER-COMPOSE

@@ -97,3 +97,8 @@ function chsh() {
   source ${pwdd}woo.sh
   cd -
 }
+
+f_snc() {
+  mv ~/Downloads/kubeconfig-$1.yaml ~/.kube/
+  export KUBECONFIG=~/.kube/kubeconfig-$1.yaml
+}
