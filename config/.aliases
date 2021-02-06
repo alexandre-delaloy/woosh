@@ -5,12 +5,14 @@ source ~/.functions
 # MISC
 alias c="clear"
 alias cdc="cd ; clear"
+alias crt="cool-retro-term"
 alias del="rm -rf"
 alias e="exit"
 alias o="f_o"
 alias mkd="f_mkd"
 alias t="touch"
 alias snc="f_snc"
+alias uzsh="source ~/.zshrc"
 
 # NAVIGATION
 alias ...=../..
