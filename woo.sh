@@ -2,6 +2,8 @@
 
 source bin/colors.sh
 
+clear
+
 woosh() {
   read -p "
   Hi $(fyellow "$(whoami)"). I'm $(fgreen "Woosh") $(green "(0.0)"), your personal dotfile configuration assistant.
@@ -14,9 +16,14 @@ woosh() {
         - git
         - htop
         - shellcheck
+        - tmux
         - xclip
         - zsh
     $(yellow "[3]") Copy $(fyellow "dotfiles") (.aliases, .functions, etc..)
+        - .aliases
+        - .functions
+        - .blyndusk-theme.cool-retro-theme
+        - .tmux.sh
     $(yellow "[4]") Install $(fyellow "all snap packages") below
     $(yellow "[5]") Install $(fgreen "[dev]") $(fyellow "snap packages")
         - vscode
