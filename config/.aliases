@@ -12,6 +12,7 @@ alias o="f_o"
 alias mkd="f_mkd"
 alias t="touch"
 alias snc="f_snc"
+alias sp="snap"
 alias uzsh="source ~/.zshrc"
 
 # NAVIGATION
@@ -72,7 +73,7 @@ alias fbd="firebase deploy"
 # GIT
 alias ghst="git log --graph --oneline --decorate --all"
 alias grh="git reset --hard" 
-alias gstcl="git status -s -b"
+alias gssb="git status -s -b"
 
 # TERRAFORM
 alias tfi="terraform init"
