@@ -14,11 +14,11 @@ RUN_COMMAND $ISUDO apt upgrade
 
 INSTALL_PACKAGE curl
 
-source bin/packages/gh.sh
+# source bin/packages/gh.sh
 # source bin/packages/yarn.sh
 
 INSTALL_PACKAGE git
-INSTALL_PACKAGE gh
+# INSTALL_PACKAGE gh
 INSTALL_PACKAGE htop
 INSTALL_PACKAGE shellcheck
 INSTALL_PACKAGE xclip

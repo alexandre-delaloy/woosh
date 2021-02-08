@@ -10,15 +10,33 @@ woosh() {
 
     $(green "[1]") $(fgreen "Everything below")
     $(yellow "[2]") Install $(fyellow "apt packages")
+        - curl
+        - git
+        - htop
+        - shellcheck
+        - xclip
+        - zsh
     $(yellow "[3]") Copy $(fyellow "dotfiles") (.aliases, .functions, etc..)
-    $(yellow "[4]")   Install $(fgreen "all") $(fyellow "snap packages")
-    $(yellow "[4.1]") Install $(fgreen "[dev]") $(fyellow "snap packages") (vscode, kubectl, lens, postman, arduino, cool retro term)
-    $(yellow "[4.2]") Install $(fgreen "[chat]") $(fyellow "snap packages") (slack, teams, telegram, discord)
-    $(yellow "[4.3]") Install $(fgreen "[misc]") $(fyellow "snap packages") (vlc, gimp)
+    $(yellow "[4]") Install $(fyellow "all snap packages") below
+    $(yellow "[5]") Install $(fgreen "[dev]") $(fyellow "snap packages")
+        - vscode
+        - kubectl
+        - lens
+        - postman
+        - arduino
+        - cool retro term
+    $(yellow "[6]") Install $(fgreen "[chat]") $(fyellow "snap packages")
+        - slack
+        - teams
+        - telegram
+        - discord
+    $(yellow "[7]") Install $(fgreen "[misc]") $(fyellow "snap packages") 
+        - vlc
+        - gimp
     -
     $(red "[0]") $(fred "Exit")
 
-  [0-3]: " -n 3 -r NUMBER
+  [0-7]: " -n 1 -r NUMBER
 
   if [[ $NUMBER = "1" ]] ; then
     echo "
@@ -38,18 +56,18 @@ woosh() {
     echo "
       "
     source bin/snaps.sh
-  elif [[ $NUMBER = "4.1" ]] ; then
+  elif [[ $NUMBER = "5" ]] ; then
     echo "
       "
-    source bin/snaps.sh 4.1
-  elif [[ $NUMBER = "4.2" ]] ; then
+    source bin/snaps.sh 5
+  elif [[ $NUMBER = "6" ]] ; then
     echo "
       "
-    source bin/snaps.sh 4.2
-  elif [[ $NUMBER = "4.3" ]] ; then
+    source bin/snaps.sh 6
+  elif [[ $NUMBER = "7" ]] ; then
     echo "
       "
-    source bin/snaps.sh 4.3
+    source bin/snaps.sh 7
   else
       return 0
   fi

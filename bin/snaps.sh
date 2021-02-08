@@ -17,6 +17,8 @@
 
 source bin/utils.sh
 
+sudo snap refresh
+
 function INSTALL_CHAT_SNAPS() {
   sudo snap install slack --classic
   CHECK_COMMAND_INSTALLATION slack
@@ -58,11 +60,11 @@ function INSTALL_MISC_SNAPS() {
   CHECK_COMMAND_INSTALLATION gimp
 }
 
-if [ $1 = "4.1" ] ; then
+if [ $1 = "5" ] ; then
   INSTALL_DEV_SNAPS
-elif [ $1 = "4.2" ] ; then
+elif [ $1 = "6" ] ; then
   INSTALL_CHAT_SNAPS
-elif [ $1 = "4.3" ] ; then
+elif [ $1 = "7" ] ; then
   INSTALL_MISC_SNAPS
 else
   INSTALL_DEV_SNAPS
