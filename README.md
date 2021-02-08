@@ -14,7 +14,7 @@ chmod +x woo.sh
 
 ![woosh](assets/woosh.jpg)
 
-## II -  Use
+## II - Use
 
 ```bash
 bash woo.sh
@@ -26,6 +26,12 @@ bash woo.sh
 - 2 - Install `apt packages` like `curl`, `git`, `htop`, etc
 - 3 - Copy dotfiles like `.aliases`, `.functions`, etc
 - 0 - Exit script
+
+## III - Test
+
+```bash
+docker build -t woosh . ; docker run --rm -it woosh
+```
 
 ## III - License
 
