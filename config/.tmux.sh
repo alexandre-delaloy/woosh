@@ -7,7 +7,7 @@ tmux new-session \; \
   split-window -h -p 50 \; \
   send-keys 'cd ~/_/CONFIG/dotfiles ; bash woo.sh' C-m \; \
   select-pane -t 1 \; \
-  send-keys 'cd ; date ; printf "\n" ; hostnamectl' C-m \; \
+  send-keys 'cd ; clear ; date ; printf "\n" ; hostnamectl' C-m \; \
   split-window -v \; \
   send-keys 'cd ~/_ ; clear ; ls -l' C-m \; \
   setw -g mouse on \; \

@@ -45,33 +45,34 @@ woosh() {
 
   [0-7]: " -n 1 -r NUMBER
 
-  if [[ $NUMBER = "1" ]] ; then
+  if [[ $NUMBER -eq 1 ]] ; then
     echo "
     "
     source bin/apt.sh
     source bin/cp.sh
-    source bin/docker.sh
-  elif [[ $NUMBER = "2" ]] ; then
+    # source bin/docker.sh
+    source bin/snaps.sh
+  elif [[ $NUMBER -eq 2 ]] ; then
     echo "
       "
     source bin/apt.sh
-  elif [[ $NUMBER = "3" ]] ; then
+  elif [[ $NUMBER -eq 3 ]] ; then
     echo "
       "
     source bin/cp.sh
-  elif [[ $NUMBER = "4" ]] ; then
+  elif [[ $NUMBER -eq 4 ]] ; then
     echo "
       "
     source bin/snaps.sh
-  elif [[ $NUMBER = "5" ]] ; then
+  elif [[ $NUMBER -eq 5 ]] ; then
     echo "
       "
     source bin/snaps.sh 5
-  elif [[ $NUMBER = "6" ]] ; then
+  elif [[ $NUMBER -eq 6 ]] ; then
     echo "
       "
     source bin/snaps.sh 6
-  elif [[ $NUMBER = "7" ]] ; then
+  elif [[ $NUMBER -eq 7 ]] ; then
     echo "
       "
     source bin/snaps.sh 7
