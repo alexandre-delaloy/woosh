@@ -2,8 +2,6 @@
 
 source bin/colors.sh
 
-
-
 function RUN_COMMAND() {
   COMMAND_STATUS "-" \'"$*"\'
   $*
@@ -27,9 +25,8 @@ function COMMAND_STATUS() {
 
 
 function INSTALL_PACKAGE() {
-  which "sudo" > /dev/null 2>&1
   INSTALL_STATUS '-' \'"$1"\'
-  $ISUDO apt install "$1"
+  $ISUDO apt install "$1" -y
   if [[ "$?" = 0 ]] ; then
     INSTALL_STATUS 'v' \'"$1"\'
     return 0
