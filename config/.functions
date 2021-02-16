@@ -1,6 +1,13 @@
 #!/bin/bash
 
-
+function f_stapp() {
+  if [ "$1" = "chat" ] ; then
+    
+  elif [ "$1" = "dev" ] ; then
+  
+  elif [ "$1" = "chat" ] ; then
+  
+}
 
 # clean bash & zsh history file
 function f_clean_history() {
@@ -38,9 +45,9 @@ function f_mkdr() {
 # open pwd directory by default, or specified file, directory or application
 function f_o() {
 	if [ $# -eq 0 ] ; then 
-    open .
+    xdg-open .
 	else 
-    open "$@"
+    xdg-open "$@"
   fi
 }
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/.functions
+source ./.functions
 
 # MISC
 alias c="clear"
