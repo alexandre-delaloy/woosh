@@ -1,4 +1,4 @@
-# Woo.sh
+# Woosh
 
 ![language](https://img.shields.io/github/languages/top/blyndusk/dotfiles)
 ![license](https://img.shields.io/github/v/release/blyndusk/dotfiles)
@@ -7,7 +7,7 @@
 
 ## I - Goal
 
-**Woo.sh** is my personnal Ubuntu configuraion setup assistant.
+**Woosh** is my personnal *Ubuntu configuraion setup assistant*.
 
 It will be charged for me, after the installation of a fresh Ubuntu operating system, to:
 - update my **apt packages** and **install new ones** (*git, htop, tmux, etc...*)
@@ -17,10 +17,11 @@ It will be charged for me, after the installation of a fresh Ubuntu operating sy
 
 ## II - Install
 
-To install **Woo.sh** and run it on your machine, you just have to clone the repository, make `woo.sh` executable and then run it using bash.
+To install **Woosh** and run it on your machine, you just have to clone the repository, make `woo.sh` executable and then run it using bash.
 
 ```bash
-git clone https://github.com/blyndusk/dotfiles.git
+git clone https://github.com/blyndusk/woosh.git ~/.woosh
+cd ~/.woosh
 chmod +x woo.sh
 bash woo.sh
 ```
@@ -33,7 +34,7 @@ A **prompt will be displayed**, and depending on the *number* you enter, an **ac
 
 ## III - Test
 
-You can test some **Woo.sh**'s features in a *remote Ubuntu machine*,** to avoid overwriting your local configuration**, by using Docker.
+You can test some **Woosh**'s features in a *remote Ubuntu machine*, to avoid overwriting your local configuration**, by using Docker.
 
 ```bash
 docker build -t woosh . ; docker run --rm -it woosh
