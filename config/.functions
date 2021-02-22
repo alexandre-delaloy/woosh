@@ -9,35 +9,8 @@ function f_stapp() {
   
 }
 
-# clean bash & zsh history file
-function f_clean_history() {
-  if [ "$1" = "--zsh" ] ; then 
-    printf "\n" > .zsh_history
-  elif [ "$1" = "--bash" ] ; 
-    then printf "\n" > .bash_history
-  else 
-    printf "\n" > .zsh_history
-    printf "\n" > .bash_history 
-  fi
-}
-
-# (git) clone a repository by name using ssh & go into it
-function f_gclcd() {
-  git clone "git@github.com:blyndusk/$1.git"
-  cd $1
-}
-
-# create a new localhost with specific port
-function f_host() {
-  if [ "$*" ] ; then 
-    php -S localhost:"$1"
-  else 
-    php -S localhost:8000
-  fi
-}
-
 # create a new folder & go into it
-function f_mkdr() { 
+function f_mkd() { 
   mkdir -p "$@"
   cd "$_" || exit
 }
@@ -92,20 +65,20 @@ function f_zip() {
 }
 
 # create a new bash script
-function newsh() {
+newsh() {
 	FILE=/usr/local/bin/"$1"
 	touch "$FILE" ; chmod a+rx "$FILE"
 	echo "#!/usr/local/bin/bash" > "$FILE"
 }
 
-function chsh() {
+chsh() {
   local pwd=/Users/alexandre.delaloy/_/PERSO/cheatsheets/
   cd $pwd
   source ${pwdd}woo.sh
   cd -
 }
 
-f_snc() {
+function f_snc() {
   mv ~/Downloads/kubeconfig-$1.yaml ~/.kube/
   export KUBECONFIG=~/.kube/kubeconfig-$1.yaml
 }
