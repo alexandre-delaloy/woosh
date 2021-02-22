@@ -9,7 +9,7 @@ function launch_tmux() {
       send-keys '%htop' C-m \; \
       split-window -v -p 66 \; \
       split-window -h -p 50 \; \
-      send-keys '%cd ~/_/CONFIG/woosh ; bash woo.sh' C-m \; \
+      send-keys '%cd ~/.woosh ; bash woo.sh' C-m \; \
       select-pane -t 1 \; \
       send-keys '%cd ; clear ; date ; printf "\n" ; hostnamectl' C-m \; \
       split-window -v \; \
