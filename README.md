@@ -20,7 +20,7 @@ It will be charged for me, after the installation of a fresh Ubuntu operating sy
 To install **Woosh** and run it on your machine, you just have to clone the repository, make `woo.sh` executable and then run it using bash.
 
 ```bash
-git clone https://github.com/blyndusk/woosh.git ~/.woosh
+git clone git@github.com:blyndusk/woosh.git ~/.woosh
 cd ~/.woosh
 chmod +x woo.sh
 bash woo.sh
