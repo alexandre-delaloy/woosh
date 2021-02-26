@@ -20,4 +20,7 @@ COPY_FILE config/ .functions ~
 COPY_FILE config/ .blyndusk-theme.cool-retro-theme.json ~
 COPY_FILE config/ .tmux.sh ~
 
+COPY_FILE config/ .vscode ~
+COPY_FILE config/ Code ~/.config
+
 update_zsh_file

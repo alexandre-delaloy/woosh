@@ -47,8 +47,9 @@ function INSTALL_STATUS() {
 
 function COPY_FILE() {
   CP_STATUS '-' "$2"
-  cp "$1$2" "$3"
-  if [[ -f $3/$2 ]] ; then
+  cp -r "$1$2" "$3"
+  echo "$3/$2"
+  if [[ -f $3/$2 || -d $3/$2 ]] ; then
     CP_STATUS 'v' "$2"
     return 0
   else
