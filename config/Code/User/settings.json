@@ -1,0 +1,6 @@
+{
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.linux": "/home/alexandre/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.minikube-path.linux": "/home/alexandre/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    }
+}

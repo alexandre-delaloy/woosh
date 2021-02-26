@@ -1,0 +1,68 @@
+[2021-02-26 10:24:33.135] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/alexandre/.config/Code/User/snippets'
+[2021-02-26 10:25:13.091] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-02-26 10:37:07.826] [sharedprocess] [info] Installing extension: ms-azuretools.vscode-docker
+[2021-02-26 10:37:08.315] [sharedprocess] [info] Downloaded extension: ms-azuretools.vscode-docker undefined
+[2021-02-26 10:37:08.438] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.ms-azuretools.vscode-docker-1.10.0: ms-azuretools.vscode-docker
+[2021-02-26 10:37:08.438] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/ms-azuretools.vscode-docker-1.10.0
+[2021-02-26 10:37:08.440] [sharedprocess] [info] Installation completed. ms-azuretools.vscode-docker
+[2021-02-26 10:37:08.462] [sharedprocess] [info] Extensions installed successfully: ms-azuretools.vscode-docker
+[2021-02-26 10:37:39.380] [sharedprocess] [info] Installing extension: ms-kubernetes-tools.vscode-kubernetes-tools
+[2021-02-26 10:37:39.851] [sharedprocess] [info] Downloaded extension: ms-kubernetes-tools.vscode-kubernetes-tools undefined
+[2021-02-26 10:37:39.932] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0: ms-kubernetes-tools.vscode-kubernetes-tools
+[2021-02-26 10:37:39.932] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0
+[2021-02-26 10:37:39.933] [sharedprocess] [info] Installation completed. ms-kubernetes-tools.vscode-kubernetes-tools
+[2021-02-26 10:37:40.199] [sharedprocess] [info] Installing extension: redhat.vscode-yaml
+[2021-02-26 10:37:40.853] [sharedprocess] [info] Downloaded extension: redhat.vscode-yaml undefined
+[2021-02-26 10:37:41.339] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.redhat.vscode-yaml-0.15.0: redhat.vscode-yaml
+[2021-02-26 10:37:41.339] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/redhat.vscode-yaml-0.15.0
+[2021-02-26 10:37:41.340] [sharedprocess] [info] Installation completed. redhat.vscode-yaml
+[2021-02-26 10:37:41.342] [sharedprocess] [info] Extensions installed successfully: redhat.vscode-yaml
+[2021-02-26 10:37:41.342] [sharedprocess] [info] Extensions installed successfully: ms-kubernetes-tools.vscode-kubernetes-tools
+[2021-02-26 10:38:11.572] [sharedprocess] [info] Installing extension: eamodio.gitlens
+[2021-02-26 10:38:12.069] [sharedprocess] [info] Downloaded extension: eamodio.gitlens undefined
+[2021-02-26 10:38:12.206] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.eamodio.gitlens-11.2.1: eamodio.gitlens
+[2021-02-26 10:38:12.206] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/eamodio.gitlens-11.2.1
+[2021-02-26 10:38:12.210] [sharedprocess] [info] Installation completed. eamodio.gitlens
+[2021-02-26 10:38:12.216] [sharedprocess] [info] Extensions installed successfully: eamodio.gitlens
+[2021-02-26 10:40:30.854] [sharedprocess] [info] Installing extension: formulahendry.auto-rename-tag
+[2021-02-26 10:40:31.210] [sharedprocess] [info] Downloaded extension: formulahendry.auto-rename-tag undefined
+[2021-02-26 10:40:31.225] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.formulahendry.auto-rename-tag-0.1.6: formulahendry.auto-rename-tag
+[2021-02-26 10:40:31.225] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/formulahendry.auto-rename-tag-0.1.6
+[2021-02-26 10:40:31.226] [sharedprocess] [info] Installation completed. formulahendry.auto-rename-tag
+[2021-02-26 10:40:31.227] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-rename-tag
+[2021-02-26 10:40:34.014] [sharedprocess] [info] Installing extension: formulahendry.auto-close-tag
+[2021-02-26 10:40:34.293] [sharedprocess] [info] Downloaded extension: formulahendry.auto-close-tag undefined
+[2021-02-26 10:40:34.307] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.formulahendry.auto-close-tag-0.5.10: formulahendry.auto-close-tag
+[2021-02-26 10:40:34.307] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/formulahendry.auto-close-tag-0.5.10
+[2021-02-26 10:40:34.308] [sharedprocess] [info] Installation completed. formulahendry.auto-close-tag
+[2021-02-26 10:40:34.309] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-close-tag
+[2021-02-26 10:44:53.579] [sharedprocess] [info] Installing extension: coenraads.bracket-pair-colorizer-2
+[2021-02-26 10:44:53.875] [sharedprocess] [info] Downloaded extension: coenraads.bracket-pair-colorizer-2 undefined
+[2021-02-26 10:44:53.926] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.coenraads.bracket-pair-colorizer-2-0.2.0: coenraads.bracket-pair-colorizer-2
+[2021-02-26 10:44:53.926] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0
+[2021-02-26 10:44:53.927] [sharedprocess] [info] Installation completed. coenraads.bracket-pair-colorizer-2
+[2021-02-26 10:44:53.928] [sharedprocess] [info] Extensions installed successfully: coenraads.bracket-pair-colorizer-2
+[2021-02-26 10:45:35.659] [sharedprocess] [info] Installing extension: octref.vetur
+[2021-02-26 10:45:37.207] [sharedprocess] [info] Downloaded extension: octref.vetur undefined
+[2021-02-26 10:45:38.736] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.octref.vetur-0.32.0: octref.vetur
+[2021-02-26 10:45:38.737] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/octref.vetur-0.32.0
+[2021-02-26 10:45:38.738] [sharedprocess] [info] Installation completed. octref.vetur
+[2021-02-26 10:45:38.742] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2021-02-26 10:46:48.890] [sharedprocess] [info] Installing extension: aaron-bond.better-comments
+[2021-02-26 10:46:49.120] [sharedprocess] [info] Downloaded extension: aaron-bond.better-comments undefined
+[2021-02-26 10:46:49.140] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.aaron-bond.better-comments-2.1.0: aaron-bond.better-comments
+[2021-02-26 10:46:49.140] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/aaron-bond.better-comments-2.1.0
+[2021-02-26 10:46:49.141] [sharedprocess] [info] Installation completed. aaron-bond.better-comments
+[2021-02-26 10:46:49.142] [sharedprocess] [info] Extensions installed successfully: aaron-bond.better-comments
+[2021-02-26 10:48:12.325] [sharedprocess] [info] Installing extension: yzhang.markdown-all-in-one
+[2021-02-26 10:48:12.972] [sharedprocess] [info] Downloaded extension: yzhang.markdown-all-in-one undefined
+[2021-02-26 10:48:13.309] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.yzhang.markdown-all-in-one-3.4.0: yzhang.markdown-all-in-one
+[2021-02-26 10:48:13.309] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/yzhang.markdown-all-in-one-3.4.0
+[2021-02-26 10:48:13.310] [sharedprocess] [info] Installation completed. yzhang.markdown-all-in-one
+[2021-02-26 10:48:13.312] [sharedprocess] [info] Extensions installed successfully: yzhang.markdown-all-in-one
+[2021-02-26 10:49:04.524] [sharedprocess] [info] Installing extension: wix.vscode-import-cost
+[2021-02-26 10:49:05.837] [sharedprocess] [info] Downloaded extension: wix.vscode-import-cost undefined
+[2021-02-26 10:49:07.703] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.wix.vscode-import-cost-2.15.0: wix.vscode-import-cost
+[2021-02-26 10:49:07.703] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/wix.vscode-import-cost-2.15.0
+[2021-02-26 10:49:07.704] [sharedprocess] [info] Installation completed. wix.vscode-import-cost
+[2021-02-26 10:49:07.712] [sharedprocess] [info] Extensions installed successfully: wix.vscode-import-cost
