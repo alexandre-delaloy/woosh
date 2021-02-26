@@ -1,0 +1,36 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/alexandre/_/FOGO/maorie-monolithic
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :maorie-front/src/plugins/http.plugin.js
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/plugins/http.plugin.js
+> git cat-file -s 2b3b3732ed746751a16648ba9b3ead5c1bb1f3e5
+> git check-ignore -v -z --stdin
+> git show --textconv :maorie-front/src/plugins/http.plugin.js
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/plugins/http.plugin.js
+> git cat-file -s 2b3b3732ed746751a16648ba9b3ead5c1bb1f3e5
+> git check-ignore -v -z --stdin
+> git show --textconv :maorie-front/src/components/conversations/Conversations.chat.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/components/conversations/Conversations.chat.vue
+> git cat-file -s 5f99bb9f60d8342030a418af22a6e08057e16782
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :maorie-front/.eslintrc.js
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/.eslintrc.js
+> git cat-file -s 6d95817d10fbea1c26dca42e73e17ae02dbe9e7e

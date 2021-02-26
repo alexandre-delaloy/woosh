@@ -1,0 +1,39 @@
+[2021-02-26 10:50:09.508] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-02-26 10:54:45.307] [sharedprocess] [info] Installing extension: oderwat.indent-rainbow
+[2021-02-26 10:54:45.599] [sharedprocess] [info] Downloaded extension: oderwat.indent-rainbow undefined
+[2021-02-26 10:54:45.637] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.oderwat.indent-rainbow-7.5.0: oderwat.indent-rainbow
+[2021-02-26 10:54:45.637] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/oderwat.indent-rainbow-7.5.0
+[2021-02-26 10:54:45.638] [sharedprocess] [info] Installation completed. oderwat.indent-rainbow
+[2021-02-26 10:54:45.640] [sharedprocess] [info] Extensions installed successfully: oderwat.indent-rainbow
+[2021-02-26 10:55:21.905] [sharedprocess] [info] Installing extension: christian-kohler.path-intellisense
+[2021-02-26 10:55:22.164] [sharedprocess] [info] Downloaded extension: christian-kohler.path-intellisense undefined
+[2021-02-26 10:55:22.210] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.christian-kohler.path-intellisense-2.3.0: christian-kohler.path-intellisense
+[2021-02-26 10:55:22.211] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/christian-kohler.path-intellisense-2.3.0
+[2021-02-26 10:55:22.211] [sharedprocess] [info] Installation completed. christian-kohler.path-intellisense
+[2021-02-26 10:55:22.212] [sharedprocess] [info] Extensions installed successfully: christian-kohler.path-intellisense
+[2021-02-26 11:25:10.925] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme
+[2021-02-26 11:25:11.469] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme undefined
+[2021-02-26 11:25:11.531] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.equinusocio.vsc-material-theme-33.1.2: equinusocio.vsc-material-theme
+[2021-02-26 11:25:11.531] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/equinusocio.vsc-material-theme-33.1.2
+[2021-02-26 11:25:11.532] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme
+[2021-02-26 11:25:11.701] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme-icons
+[2021-02-26 11:25:11.702] [sharedprocess] [info] Installing extension: equinusocio.vsc-community-material-theme
+[2021-02-26 11:25:11.963] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-community-material-theme undefined
+[2021-02-26 11:25:11.984] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.equinusocio.vsc-community-material-theme-1.4.2: equinusocio.vsc-community-material-theme
+[2021-02-26 11:25:11.984] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/equinusocio.vsc-community-material-theme-1.4.2
+[2021-02-26 11:25:11.985] [sharedprocess] [info] Installation completed. equinusocio.vsc-community-material-theme
+[2021-02-26 11:25:11.986] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-community-material-theme
+[2021-02-26 11:25:12.289] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme-icons undefined
+[2021-02-26 11:25:13.856] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.equinusocio.vsc-material-theme-icons-1.2.2: equinusocio.vsc-material-theme-icons
+[2021-02-26 11:25:13.856] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/equinusocio.vsc-material-theme-icons-1.2.2
+[2021-02-26 11:25:13.858] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme-icons
+[2021-02-26 11:25:13.862] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme-icons
+[2021-02-26 11:25:13.864] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme
+[2021-02-26 11:28:10.095] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2021-02-26 11:28:10.445] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme undefined
+[2021-02-26 11:28:10.720] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.pkief.material-icon-theme-4.5.0: pkief.material-icon-theme
+[2021-02-26 11:28:10.720] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/pkief.material-icon-theme-4.5.0
+[2021-02-26 11:28:10.721] [sharedprocess] [info] Installation completed. pkief.material-icon-theme
+[2021-02-26 11:28:10.723] [sharedprocess] [info] Extensions installed successfully: pkief.material-icon-theme
+[2021-02-26 11:28:47.643] [sharedprocess] [info] Uninstalling extension: equinusocio.vsc-material-theme-icons
+[2021-02-26 11:28:47.687] [sharedprocess] [info] Successfully uninstalled extension: equinusocio.vsc-material-theme-icons

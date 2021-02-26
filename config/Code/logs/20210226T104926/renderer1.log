@@ -1,0 +1,149 @@
+[2021-02-26 10:49:26.991] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/alexandre/_/FOGO/maorie-monolithic/.vscode'
+[2021-02-26 10:54:45.708] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 10:55:22.271] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 11:25:12.015] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 11:25:13.932] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 11:25:41.525] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/alexandre/_/FOGO/maorie-monolithic/.vscode'
+[2021-02-26 11:28:10.926] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 11:28:49.952] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/alexandre/_/FOGO/maorie-monolithic/.vscode'
+[2021-02-26 11:30:00.807] [renderer1] [error] Cannot read property 'getRuleStack' of undefined: TypeError: Cannot read property 'getRuleStack' of undefined
+    at DocumentDecoration.tokenizeLine (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecoration.js:227:35)
+    at DocumentDecoration.onDidChangeTextDocument (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecoration.js:39:30)
+    at DocumentDecorationManager.onDidChangeTextDocument (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:47:32)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:30:39
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at I.$acceptModelChanged (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:126356)
+    at p._doInvokeHandler (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:10276)
+    at p._invokeHandler (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:9968)
+    at p._receiveRequest (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:8638)
+    at p._receiveOneMessage (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:7440)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:5568
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at d.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:15515)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:29104
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at d.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:15515)
+    at t._receiveMessage (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:20765)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:17659
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at u.acceptChunk (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:12880)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:12228
+    at Socket.m (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:12375)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-02-26 11:37:34.852] [renderer1] [error] Cannot read property 'getRuleStack' of undefined: TypeError: Cannot read property 'getRuleStack' of undefined
+    at DocumentDecoration.tokenizeLine (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecoration.js:227:35)
+    at DocumentDecoration.onDidChangeTextDocument (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecoration.js:39:30)
+    at DocumentDecorationManager.onDidChangeTextDocument (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:47:32)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:30:39
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at I.$acceptModelChanged (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:126356)
+    at p._doInvokeHandler (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:10276)
+    at p._invokeHandler (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:9968)
+    at p._receiveRequest (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:8638)
+    at p._receiveOneMessage (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:7440)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:5568
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at d.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:15515)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:29104
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at d.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:15515)
+    at t._receiveMessage (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:20765)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:17659
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at u.acceptChunk (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:12880)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:12228
+    at Socket.m (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:12375)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-02-26 11:37:56.896] [renderer1] [error] Cannot read property 'getRuleStack' of undefined: TypeError: Cannot read property 'getRuleStack' of undefined
+    at DocumentDecoration.tokenizeLine (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecoration.js:227:35)
+    at DocumentDecoration.onDidChangeTextDocument (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecoration.js:39:30)
+    at DocumentDecorationManager.onDidChangeTextDocument (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:47:32)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:30:39
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at I.$acceptModelChanged (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:126356)
+    at p._doInvokeHandler (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:10276)
+    at p._invokeHandler (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:9968)
+    at p._receiveRequest (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:8638)
+    at p._receiveOneMessage (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:7440)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:89:5568
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at d.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:15515)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:29104
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at d.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:15515)
+    at t._receiveMessage (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:20765)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:17659
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at u.acceptChunk (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:12880)
+    at /snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:63:12228
+    at Socket.m (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:12375)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)

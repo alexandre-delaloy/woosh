@@ -1,6 +1,35 @@
 {
-    "vs-kubernetes": {
-        "vscode-kubernetes.helm-path.linux": "/home/alexandre/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vscode-kubernetes.minikube-path.linux": "/home/alexandre/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    }
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "block",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "eslint.alwaysShowStatus": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "material-icon-theme.folders.color": "#9a35ff",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.opacity": 1,
+  "material-icon-theme.saturation": null,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+  "terminal.integrated.cursorBlinking": true,
+  "window.newWindowDimensions": "maximized",
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "workbench.colorCustomizations": {
+    "[Material Theme Ocean High Contrast]": {}
+  },
+  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.wrapTabs": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "Material Theme Ocean High Contrast"
 }

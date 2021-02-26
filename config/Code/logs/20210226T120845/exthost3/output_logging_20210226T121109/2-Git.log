@@ -1,0 +1,23 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/alexandre/_/FOGO/go-auth
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :README.md
+> git ls-files --stage -- /home/alexandre/_/FOGO/go-auth/README.md
+> git cat-file -s d20b12eb51b9e4c7d564e0034b3bfd6f8a03b702
+> git check-ignore -v -z --stdin
+> git show --textconv :api/main.go
+> git ls-files --stage -- /home/alexandre/_/FOGO/go-auth/api/main.go
+> git cat-file -s e8e15fc1a211feab4ae808ab9aa331b5a72d21ef
+> git show --textconv :go.mod
+> git ls-files --stage -- /home/alexandre/_/FOGO/go-auth/go.mod
+> git cat-file -s 6b8b79fc8f353f8068c67fc6602c8ef5e5c437a2
+> git show --textconv :api/main.go
+> git ls-files --stage -- /home/alexandre/_/FOGO/go-auth/api/main.go
+> git cat-file -s e8e15fc1a211feab4ae808ab9aa331b5a72d21ef

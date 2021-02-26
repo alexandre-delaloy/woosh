@@ -1,0 +1,44 @@
+[Info  - 12:32:15 PM] 2021/02/26 12:32:15 go env for /home/alexandre/snap/cool-retro-term/150
+(root /home/alexandre/snap/cool-retro-term/150)
+(go version go version go1.15.7 linux/amd64)
+(valid build configuration = false)
+(build flags: [])
+GOFLAGS=
+GOMODCACHE=/home/alexandre/go/pkg/mod
+GOSUMDB=sum.golang.org
+GO111MODULE=
+GONOSUMDB=
+GOPATH=/home/alexandre/go
+GOPROXY=https://proxy.golang.org,direct
+GOCACHE=/home/alexandre/snap/cool-retro-term/common/.cache/go-build
+GOMOD=
+GONOPROXY=
+GOPRIVATE=
+GOINSECURE=
+GOROOT=/usr/local/go
+
+
+[Info  - 12:32:15 PM] 2021/02/26 12:32:15 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/snap/cool-retro-term/150
+	query=[./ builtin]
+	packages=2
+
+[Info  - 12:32:15 PM] 2021/02/26 12:32:15 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/snap/cool-retro-term/150
+	query=[./]
+	packages=1
+
+[Info  - 12:32:16 PM] 2021/02/26 12:32:16 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/snap/cool-retro-term/150
+	query=[./]
+	packages=1
+
+[Info  - 12:32:16 PM] 2021/02/26 12:32:16 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/snap/cool-retro-term/150
+	query=[./]
+	packages=1
+

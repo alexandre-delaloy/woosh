@@ -2,9 +2,27 @@
     "telemetry.machineId": "c85de7afc3e29f797c29c3c867f255548ef8305b721236e38011a3ade8c7650c",
     "openedPathsList": {
         "workspaces3": [
-            "file:///home/alexandre/_/FOGO/go-auth"
+            "file:///home/alexandre/snap/cool-retro-term/150",
+            "file:///home/alexandre/.woosh",
+            "file:///home/alexandre/_/FOGO/maorie-monolithic/maorie-front",
+            "file:///home/alexandre/_/FOGO/go-auth",
+            "file:///home/alexandre/_/FOGO/maorie-monolithic",
+            "file:///home/alexandre",
+            "file:///home/alexandre/.config/Code",
+            "file:///home/alexandre/.vscode",
+            "file:///home/alexandre/_/FOGO/cicd",
+            "file:///home/alexandre/_/FOGO/nextrologie",
+            "file:///home/alexandre/_/CONFIG/woosh",
+            "file:///home/alexandre/_/NX/maorie-monolithic/maorie-front",
+            "file:///home/alexandre/_/NX/maorie-monolithic",
+            "file:///home/alexandre/go/src/github.com/blyndusk/MT4P2022-go-wiki",
+            "file:///home/alexandre/_/CONFIG/dotfiles",
+            "file:///home/alexandre/_/NX/go-auth",
+            "file:///home/alexandre/_"
         ],
-        "files2": []
+        "files2": [
+            "file:///home/alexandre/_/FOGO/maorie-monolithic/maorie-"
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -50,13 +68,125 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/alexandre/_/FOGO/go-auth",
+                                        "fsPath": "/home/alexandre/.woosh",
+                                        "external": "file:///home/alexandre/.woosh",
+                                        "path": "/home/alexandre/.woosh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.woosh"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/snap/cool-retro-term/150",
+                                        "path": "/home/alexandre/snap/cool-retro-term/150",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/snap/cool-retro-term/150"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/_/FOGO/maorie-monolithic/maorie-front",
+                                        "path": "/home/alexandre/_/FOGO/maorie-monolithic/maorie-front",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/_/FOGO/maorie-monolithic/maorie-front"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/alexandre/_/FOGO/go-auth",
                                         "path": "/home/alexandre/_/FOGO/go-auth",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/_/FOGO/go-auth"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/_/FOGO/maorie-monolithic",
+                                        "path": "/home/alexandre/_/FOGO/maorie-monolithic",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/_/FOGO/maorie-monolithic"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre",
+                                        "path": "/home/alexandre",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/alexandre"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/.config/Code",
+                                        "path": "/home/alexandre/.config/Code",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/Code"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/.vscode",
+                                        "path": "/home/alexandre/.vscode",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.vscode"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/_/FOGO/cicd",
+                                        "path": "/home/alexandre/_/FOGO/cicd",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/_/FOGO/cicd"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alexandre/_/FOGO/nextrologie",
+                                        "path": "/home/alexandre/_/FOGO/nextrologie",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/_/FOGO/nextrologie"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/home/alexandre/_/FOGO/maorie-monolithic/maorie-",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/_/FOGO/maorie-monolithic/maorie-"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -107,7 +237,8 @@
                     },
                     {
                         "id": "workbench.action.toggleAutoSave",
-                        "label": "A&&uto Save"
+                        "label": "A&&uto Save",
+                        "checked": true
                     },
                     {
                         "id": "submenuitem.23",
@@ -653,45 +784,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -892,8 +1032,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1446,20 +1585,53 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#1e1e1e",
+    "themeBackground": "#0f111a",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/alexandre/_/FOGO/go-auth",
-            "backupPath": "/home/alexandre/.config/Code/Backups/e283fd45a822e39824010a4ee23e0f1c",
+            "folder": "file:///home/alexandre/_/FOGO/maorie-monolithic/maorie-front",
+            "backupPath": "/home/alexandre/snap/cool-retro-term/150/.config/Code/Backups/76928246c48ce163cb449fe8e7b419a5",
             "uiState": {
                 "mode": 0,
-                "x": 448,
-                "y": 193,
+                "x": 444,
+                "y": 524,
                 "width": 1024,
                 "height": 768
             }
         },
-        "openedWindows": []
-    },
-    "pickerWorkingDir": "/home/alexandre/_/FOGO"
+        "openedWindows": [
+            {
+                "folder": "file:///home/alexandre/_/FOGO/maorie-monolithic/maorie-front",
+                "backupPath": "/home/alexandre/snap/cool-retro-term/150/.config/Code/Backups/76928246c48ce163cb449fe8e7b419a5",
+                "uiState": {
+                    "mode": 0,
+                    "x": 444,
+                    "y": 524,
+                    "width": 1024,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/alexandre/.woosh",
+                "backupPath": "/home/alexandre/snap/cool-retro-term/150/.config/Code/Backups/965401d3aea474a9956340c5019195f2",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 616,
+                    "width": 1024,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/alexandre/snap/cool-retro-term/150",
+                "backupPath": "/home/alexandre/snap/cool-retro-term/150/.config/Code/Backups/6c2c17e3b79655202f2ac50e96481533",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 653,
+                    "width": 1024,
+                    "height": 768
+                }
+            }
+        ]
+    }
 }

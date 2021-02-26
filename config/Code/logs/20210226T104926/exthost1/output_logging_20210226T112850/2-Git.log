@@ -1,0 +1,52 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/alexandre/_/FOGO/maorie-monolithic
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :README.md
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/README.md
+> git cat-file -s 3c3bdd34056611f580be05020c03714ebe78cbd3
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/App.vue
+> git show --textconv :maorie-front/src/App.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/App.vue
+> git cat-file -s 611b4a5f8ae0782d6f99598e12d92b1c6551dcd7
+> git show --textconv :maorie-front/src/views/Files.view.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/views/Files.view.vue
+> git cat-file -s 16160941838d24681798df91ac4deb3420843a76
+> git show --textconv :maorie-front/src/views/Folders.view.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/views/Folders.view.vue
+> git cat-file -s 601696bbea76aecc956cbeab42f810356a72d06b
+> git show --textconv :maorie-front/src/views/Dashboard.view.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/views/Dashboard.view.vue
+> git cat-file -s 952955894c7a2f2431a71350299ce6a137dc735b
+> git show --textconv :maorie-front/src/views/Conversations.view.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/views/Conversations.view.vue
+> git cat-file -s 73a9761e8289033588e5667a5b0867d1efadff0a
+> git show --textconv :maorie-front/src/styles/_global.scss
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/styles/_global.scss
+> git cat-file -s 33b675784d21ee99367d8e315b7d42562bed38d9
+> git show --textconv :maorie-front/src/store/store.js
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/store/store.js
+> git cat-file -s 4dade6e5fb8ed1398dabbcc812d6f25a5789a670
+> git show --textconv :maorie-front/src/router/router.js
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/router/router.js
+> git cat-file -s f411fc9ea4e8c53abb15f1020baa71d4b187df47

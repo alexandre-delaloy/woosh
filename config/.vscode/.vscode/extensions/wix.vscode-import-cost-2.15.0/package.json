@@ -1,0 +1,163 @@
+{
+	"name": "vscode-import-cost",
+	"displayName": "Import Cost",
+	"description": "Display import/require package size in the editor",
+	"license": "MIT",
+	"version": "2.15.0",
+	"publisher": "wix",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact",
+		"onLanguage:vue",
+		"onLanguage:svelte"
+	],
+	"keywords": [
+		"import",
+		"require",
+		"size",
+		"weight",
+		"webpack"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Import Cost configuration",
+			"properties": {
+				"importCost.smallPackageSize": {
+					"type": "number",
+					"default": 50,
+					"description": "Upper size limit, in KB, that will count a package as a small package"
+				},
+				"importCost.mediumPackageSize": {
+					"type": "number",
+					"default": 100,
+					"description": "Upper size limit, in KB, that will count a package as a medium package"
+				},
+				"importCost.smallPackageColor": {
+					"type": "string",
+					"default": "#7cc36e",
+					"description": "Decoration color for small packages"
+				},
+				"importCost.mediumPackageColor": {
+					"type": "string",
+					"default": "#7cc36e",
+					"description": "Decoration color for medium packages"
+				},
+				"importCost.largePackageColor": {
+					"type": "string",
+					"default": "#d44e40",
+					"description": "Decoration color for large packages"
+				},
+				"importCost.typescriptExtensions": {
+					"type": "array",
+					"default": [
+						"\\.tsx?$"
+					],
+					"description": "File extensions to be parsed by the Typescript parser"
+				},
+				"importCost.javascriptExtensions": {
+					"type": "array",
+					"default": [
+						"\\.jsx?$"
+					],
+					"description": "File extensions to be parsed by the Javascript parser"
+				},
+				"importCost.vueExtensions": {
+					"type": "array",
+					"default": [
+						"\\.vue$"
+					],
+					"description": "File extensions to be parsed by the Vue parser"
+				},
+				"importCost.svelteExtensions": {
+					"type": "array",
+					"default": [
+						"\\.svelte$"
+					],
+					"description": "File extensions to be parsed by the Svelte parser"
+				},
+				"importCost.bundleSizeDecoration": {
+					"type": "string",
+					"default": "both",
+					"enum": [
+						"both",
+						"minified",
+						"gzipped"
+					],
+					"description": "Which bundle size to display"
+				},
+				"importCost.showCalculatingDecoration": {
+					"type": "boolean",
+					"default": true,
+					"description": "Display the 'calculating' decoration when starting to calculate the size"
+				},
+				"importCost.debug": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable debug logging"
+				},
+				"importCost.timeout": {
+					"type": "number",
+					"default": 10000,
+					"description": "Size calculation timeout in milliseconds (requires restart)"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "importCost.toggle",
+				"title": "Toggle import cost"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": ":"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^14.0.27",
+		"eslint": "^7.6.0",
+		"@typescript-eslint/eslint-plugin": "^3.8.0",
+		"@typescript-eslint/parser": "^3.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"vscode-test": "^1.4.0",
+		"husky": "^0.14.3",
+		"typescript": "^4.1.3"
+	},
+	"dependencies": {
+		"filesize": "^3.5.10",
+		"import-cost": "^2.2.0"
+	},
+	"icon": "images/import-cost-logo.png",
+	"galleryBanner": {
+		"color": "#1C78C0",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/wix/import-cost/blob/master/packages/vscode-import-cost/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wix/import-cost.git"
+	},
+	"__metadata": {
+		"id": "c46b0018-f317-4b6c-a785-d2039b27338f",
+		"publisherId": "7a344d8a-64ec-42a7-9255-9eacf94e746a",
+		"publisherDisplayName": "Wix"
+	}
+}

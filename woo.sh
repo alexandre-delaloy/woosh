@@ -24,6 +24,8 @@ woosh() {
         - .functions
         - .blyndusk-theme.cool-retro-theme
         - .tmux.sh
+        - .vscode/
+        - .config/Code
     $(yellow "[4]") Install $(fyellow "all snap packages") below
     $(yellow "[5]") Install $(fgreen "[dev]") $(fyellow "snap packages")
         - vscode

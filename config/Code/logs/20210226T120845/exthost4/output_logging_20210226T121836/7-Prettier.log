@@ -1,0 +1,71 @@
+["INFO" - 12:18:36 PM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 12:18:36 PM] Extension Version: 5.9.2.
+["INFO" - 12:18:36 PM] Loaded module 'prettier@1.19.1' from '/home/alexandre/_/FOGO/maorie-monolithic/maorie-front/node_modules/prettier/index.js'
+["INFO" - 12:18:36 PM] Loaded module 'prettier@1.19.1' from '/home/alexandre/_/FOGO/maorie-monolithic/maorie-front/node_modules/prettier/index.js'
+["INFO" - 12:18:36 PM] Enabling prettier for languages: css, graphql, html, javascript, javascriptreact, json, json5, jsonc, less, markdown, mdx, mongo, postcss, scss, typescript, typescriptreact, vue, yaml
+["INFO" - 12:18:36 PM] Enabling prettier for file extensions: .JSON-tmLanguage, ._js, .avsc, .bones, .component.html, .css, .es, .es6, .frag, .geojson, .gltf, .gql, .graphql, .graphqls, .gs, .har, .htm, .html, .html.hl, .ice, .inc, .jake, .js, .js.flow, .jsb, .jscad, .jsfl, .jsm, .json, .json5, .jsonl, .jss, .jsx, .less, .markdown, .mcmeta, .md, .mdown, .mdwn, .mdx, .mir, .mjml, .mjs, .mkd, .mkdn, .mkdown, .njs, .pac, .pcss, .postcss, .reek, .ronn, .rviz, .scss, .sjs, .ssjs, .st, .sublime-build, .sublime-commands, .sublime-completions, .sublime-keymap, .sublime-macro, .sublime-menu, .sublime-mousemap, .sublime-project, .sublime-settings, .sublime-syntax, .sublime-theme, .sublime-workspace, .sublime_metrics, .sublime_session, .syntax, .tfstate, .tfstate.backup, .topojson, .ts, .tsx, .vue, .webapp, .webmanifest, .workbook, .xht, .xhtml, .xsjs, .xsjslib, .yaml, .yaml-tmlanguage, .yml, .yml.mysql, .yy, .yyp
+["INFO" - 12:18:36 PM] Enabling prettier for range supported languages: graphql, javascript, javascriptreact, json, typescript, typescriptreact
+["INFO" - 12:19:13 PM] Formatting /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/components/conversations/Conversations.chat.vue
+["INFO" - 12:19:13 PM] Using ignore file (if present) at /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/.prettierignore
+["INFO" - 12:19:13 PM] Loaded module 'prettier@1.19.1' from '/home/alexandre/_/FOGO/maorie-monolithic/maorie-front/node_modules/prettier/index.js'
+["INFO" - 12:19:13 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "vue"
+}
+["INFO" - 12:19:13 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:19:13 PM] Prettier Options:
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/components/conversations/Conversations.chat.vue",
+  "parser": "vue"
+}
+["INFO" - 12:19:13 PM] Formatting completed in 174.105107ms.
+["INFO" - 12:19:18 PM] Formatting /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/components/conversations/Conversations.chat.vue
+["INFO" - 12:19:18 PM] Using ignore file (if present) at /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/.prettierignore
+["INFO" - 12:19:18 PM] Loaded module 'prettier@1.19.1' from '/home/alexandre/_/FOGO/maorie-monolithic/maorie-front/node_modules/prettier/index.js'
+["INFO" - 12:19:18 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "vue"
+}
+["INFO" - 12:19:18 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:19:18 PM] Prettier Options:
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/components/conversations/Conversations.chat.vue",
+  "parser": "vue"
+}
+["INFO" - 12:19:18 PM] Formatting completed in 101.176678ms.

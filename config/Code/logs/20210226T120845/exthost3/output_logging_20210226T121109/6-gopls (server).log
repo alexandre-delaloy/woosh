@@ -1,0 +1,42 @@
+[Info  - 12:11:10 PM] 2021/02/26 12:11:10 go env for /home/alexandre/_/FOGO/go-auth
+(root /home/alexandre/_/FOGO/go-auth)
+(go version go version go1.15.7 linux/amd64)
+(valid build configuration = true)
+(build flags: [])
+GOFLAGS=
+GONOPROXY=
+GOINSECURE=
+GOPROXY=https://proxy.golang.org,direct
+GOROOT=/usr/local/go
+GOSUMDB=sum.golang.org
+GO111MODULE=
+GOCACHE=/home/alexandre/snap/cool-retro-term/common/.cache/go-build
+GOMOD=/home/alexandre/_/FOGO/go-auth/go.mod
+GOMODCACHE=/home/alexandre/go/pkg/mod
+GOPATH=/home/alexandre/go
+GONOSUMDB=
+GOPRIVATE=
+
+
+[Info  - 12:11:10 PM] 2021/02/26 12:11:10 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/_/FOGO/go-auth
+	query=[builtin github.com/Fogo-Capital/go-auth/...]
+	packages=11
+
+[Info  - 12:11:24 PM] 2021/02/26 12:11:24 go/packages.Load
+	snapshot=3
+	directory=/home/alexandre/_/FOGO/go-auth
+	query=[builtin github.com/Fogo-Capital/go-auth/...]
+	packages=11
+
+[Info  - 12:11:32 PM] 2021/02/26 12:11:32 go/packages.Load
+	snapshot=4
+	directory=/home/alexandre/_/FOGO/go-auth
+	query=[builtin github.com/Fogo-Capital/go-auth/...]
+	packages=11
+
+[Info  - 12:11:49 PM] 2021/02/26 12:11:49 background imports cache refresh starting
+
+[Info  - 12:11:49 PM] 2021/02/26 12:11:49 background refresh finished after 135.846901ms
+

@@ -1,0 +1,94 @@
+[Info  - 12:28:23 PM] 2021/02/26 12:28:23 go env for /home/alexandre/.woosh
+(root /home/alexandre/.woosh)
+(go version go version go1.15.7 linux/amd64)
+(valid build configuration = false)
+(build flags: [])
+GOFLAGS=
+GOINSECURE=
+GOCACHE=/home/alexandre/snap/cool-retro-term/common/.cache/go-build
+GO111MODULE=
+GOMOD=
+GOPATH=/home/alexandre/go
+GOPROXY=https://proxy.golang.org,direct
+GOPRIVATE=
+GOROOT=/usr/local/go
+GOSUMDB=sum.golang.org
+GOMODCACHE=/home/alexandre/go/pkg/mod
+GONOPROXY=
+GONOSUMDB=
+
+
+[Info  - 12:28:23 PM] 2021/02/26 12:28:23 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/.woosh
+	query=[./ builtin]
+	packages=2
+
+[Info  - 12:28:23 PM] 2021/02/26 12:28:23 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/.woosh
+	query=[./]
+	packages=1
+
+[Info  - 12:28:23 PM] 2021/02/26 12:28:23 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/.woosh
+	query=[./]
+	packages=1
+
+[Info  - 12:28:23 PM] 2021/02/26 12:28:23 go/packages.Load
+	snapshot=0
+	directory=/home/alexandre/.woosh
+	query=[./]
+	packages=1
+
+[Info  - 12:30:06 PM] 2021/02/26 12:30:06 go/packages.Load
+	snapshot=1
+	directory=/home/alexandre/.woosh
+	query=[./]
+	packages=1
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=1
+	directory=/home/alexandre/.woosh
+	query=[file=/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/buildsnippets/snippets.go file=/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go]
+	packages=1
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=1
+	package="command-line-arguments"
+	files=[/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/buildsnippets/snippets.go]
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=2
+	directory=/home/alexandre/.woosh
+	query=[file=/home/alexandre/.woosh/config/.vscode/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/buildsnippets/snippets.go file=/home/alexandre/.woosh/config/.vscode/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go file=/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go]
+	packages=1
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=2
+	package="command-line-arguments"
+	files=[/home/alexandre/.woosh/config/.vscode/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/buildsnippets/snippets.go]
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=2
+	directory=/home/alexandre/.woosh
+	query=[file=/home/alexandre/.woosh/config/.vscode/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go file=/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go]
+	packages=1
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=2
+	package="command-line-arguments"
+	files=[/home/alexandre/.woosh/config/.vscode/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go]
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=2
+	directory=/home/alexandre/.woosh
+	query=[file=/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go]
+	packages=1
+
+[Info  - 12:30:07 PM] 2021/02/26 12:30:07 go/packages.Load
+	snapshot=2
+	package="command-line-arguments"
+	files=[/home/alexandre/.woosh/config/.vscode/extensions/ms-kubernetes-tools.vscode-kubernetes-tools-1.3.0/funcs.go]
+

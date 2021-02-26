@@ -1,0 +1,1 @@
+[2021-02-26 11:51:13.795] [renderer5] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/alexandre/.config/Code/.vscode'

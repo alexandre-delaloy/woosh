@@ -1,0 +1,37 @@
+[2021-02-26 12:08:46.812] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/alexandre/_/FOGO/maorie-monolithic/.vscode'
+[2021-02-26 12:10:57.689] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 12:16:05.155] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-02-26 12:18:25.944] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/snap/code/55/usr/share/code/resources/app/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/alexandre/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at v.fire (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:55:1836)
+    at P.deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:86:55032)
+    at u.$deltaExtensions (/snap/code/55/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:90:19250)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

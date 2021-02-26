@@ -1,0 +1,35 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/alexandre/_/FOGO/maorie-monolithic
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :docker/back/dist/Dockerfile
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/docker/back/dist/Dockerfile
+> git cat-file -s deafe76906967ea7b085b23657d79df48bc713c2
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :maorie-front/src/App.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/App.vue
+> git cat-file -s 611b4a5f8ae0782d6f99598e12d92b1c6551dcd7
+> git show --textconv :maorie-front/src/App.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/App.vue
+> git cat-file -s 611b4a5f8ae0782d6f99598e12d92b1c6551dcd7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/develop refs/remotes/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :maorie-front/src/App.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/App.vue
+> git cat-file -s 611b4a5f8ae0782d6f99598e12d92b1c6551dcd7
+> git show --textconv :maorie-front/src/App.vue
+> git ls-files --stage -- /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/src/App.vue
+> git cat-file -s 611b4a5f8ae0782d6f99598e12d92b1c6551dcd7

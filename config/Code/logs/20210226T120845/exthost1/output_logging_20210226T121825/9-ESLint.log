@@ -1,0 +1,7 @@
+[Info  - 12:18:25 PM] ESLint server is starting
+[Info  - 12:18:26 PM] ESLint server running in node v12.18.3
+[Info  - 12:18:26 PM] ESLint server is running.
+[Info  - 12:18:26 PM] ESLint library loaded from: /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/node_modules/eslint/lib/api.js
+[Info  - 12:18:26 PM] Failed to load plugin 'vue' declared in 'maorie-front/.eslintrc.js': Cannot find module 'eslint-plugin-vue' Require stack: - /home/alexandre/_/FOGO/maorie-monolithic/__placeholder__.js Referenced from: /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/.eslintrc.js
+[Info  - 12:18:50 PM] Failed to load plugin 'vue' declared in 'maorie-front/.eslintrc.js': Cannot find module 'eslint-plugin-vue' Require stack: - /home/alexandre/_/FOGO/maorie-monolithic/__placeholder__.js Referenced from: /home/alexandre/_/FOGO/maorie-monolithic/maorie-front/.eslintrc.js
+[Info  - 12:18:53 PM] ESLint server stopped.

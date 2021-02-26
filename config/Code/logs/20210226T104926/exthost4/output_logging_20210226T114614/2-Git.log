@@ -1,0 +1,27 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/alexandre/.woosh
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :config/.tmux.sh
+> git ls-files --stage -- /home/alexandre/.woosh/config/.tmux.sh
+> git cat-file -s 581856c53db0935c8f424cf031b3c17c14ca5429
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git show --textconv :bin/cp.sh
+> git ls-files --stage -- /home/alexandre/.woosh/bin/cp.sh
+> git cat-file -s 23bc483c4f7e3d4882c10f62962ff5c95bcde96c
+> git show --textconv :bin/utils.sh
+> git ls-files --stage -- /home/alexandre/.woosh/bin/utils.sh
+> git cat-file -s f9cd8f9b75d846b93d701eece8bd99eee4c0ed5e
+> git show --textconv :bin/cp.sh
+> git ls-files --stage -- /home/alexandre/.woosh/bin/cp.sh
+> git cat-file -s 23bc483c4f7e3d4882c10f62962ff5c95bcde96c

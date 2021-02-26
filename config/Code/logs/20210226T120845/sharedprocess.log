@@ -1,0 +1,19 @@
+[2021-02-26 12:09:29.304] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-02-26 12:10:57.021] [sharedprocess] [info] Installing extension: golang.go
+[2021-02-26 12:10:57.035] [sharedprocess] [info] Downloaded extension: golang.go undefined
+[2021-02-26 12:10:57.143] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.golang.go-0.22.1: golang.go
+[2021-02-26 12:10:57.143] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/golang.go-0.22.1
+[2021-02-26 12:10:57.144] [sharedprocess] [info] Installation completed. golang.go
+[2021-02-26 12:10:57.148] [sharedprocess] [info] Extensions installed successfully: golang.go
+[2021-02-26 12:16:04.885] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2021-02-26 12:16:04.897] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode undefined
+[2021-02-26 12:16:05.043] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.esbenp.prettier-vscode-5.9.2: esbenp.prettier-vscode
+[2021-02-26 12:16:05.043] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/esbenp.prettier-vscode-5.9.2
+[2021-02-26 12:16:05.044] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode
+[2021-02-26 12:16:05.046] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode
+[2021-02-26 12:18:25.629] [sharedprocess] [info] Installing extension: dbaeumer.vscode-eslint
+[2021-02-26 12:18:25.643] [sharedprocess] [info] Downloaded extension: dbaeumer.vscode-eslint undefined
+[2021-02-26 12:18:25.659] [sharedprocess] [info] Extracted extension to /home/alexandre/.vscode/extensions/.dbaeumer.vscode-eslint-2.1.14: dbaeumer.vscode-eslint
+[2021-02-26 12:18:25.659] [sharedprocess] [info] Renamed to /home/alexandre/.vscode/extensions/dbaeumer.vscode-eslint-2.1.14
+[2021-02-26 12:18:25.660] [sharedprocess] [info] Installation completed. dbaeumer.vscode-eslint
+[2021-02-26 12:18:25.662] [sharedprocess] [info] Extensions installed successfully: dbaeumer.vscode-eslint
