@@ -12,13 +12,6 @@ woosh() {
 
     $(green "[1]") $(fgreen "Everything below")
     $(yellow "[2]") Install $(fyellow "apt packages")
-        - curl
-        - git
-        - htop
-        - shellcheck
-        - tmux
-        - xclip
-        - zsh
     $(yellow "[3]") Copy $(fyellow "dotfiles") (.aliases, .functions, etc..)
         - .aliases
         - .functions
@@ -28,20 +21,8 @@ woosh() {
         - .config/Code
     $(yellow "[4]") Install $(fyellow "all snap packages") below
     $(yellow "[5]") Install $(fgreen "[dev]") $(fyellow "snap packages")
-        - vscode
-        - kubectl
-        - lens
-        - postman
-        - arduino
-        - cool retro term
     $(yellow "[6]") Install $(fgreen "[chat]") $(fyellow "snap packages")
-        - slack
-        - teams
-        - telegram
-        - discord
-    $(yellow "[7]") Install $(fgreen "[misc]") $(fyellow "snap packages") 
-        - vlc
-        - gimp
+    $(yellow "[7]") Install $(fgreen "[misc]") $(fyellow "snap packages")
     -
     $(red "[0]") $(fred "Exit")
 

@@ -68,12 +68,13 @@ function CP_STATUS() {
 }
 
 function CHECK_COMMAND_INSTALLATION() {
-  which "$1" > /dev/null 2>&1
+  CMD=$(echo "$1" | sed -e 's/ --classic//g')
+  which "$CMD" > /dev/null 2>&1
   if [[ "$?" = 0 ]] ; then
-    INSTALL_STATUS 'v' \'"$1"\'
+    INSTALL_STATUS 'v' \'"$CMD"\'
     return 0
   else
-    INSTALL_STATUS 'x' \'"$1"\'
+    INSTALL_STATUS 'x' \'"$CMD"\'
     return 1
   fi
 }
