@@ -53,6 +53,9 @@ function INSTALL_DEV_SNAPS() {
 }
 
 function INSTALL_MISC_SNAPS() {
+  sudo snap install discord
+  CHECK_COMMAND_INSTALLATION discord
+
   sudo snap install vlc
   CHECK_COMMAND_INSTALLATION vlc
   
