@@ -11,6 +11,7 @@ export _APT_PACKAGE=(
 )
 
 export _SNAP_DEV_PACKAGES=(
+  "terminology --classic"
   "code --classic"
   "cool-retro-term --classic"
   "kubectl --classic"
