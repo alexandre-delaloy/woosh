@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source bin/utils.sh
+source config/.exports
 
 function INSTALL_APT_PACKAGES() {
   which "sudo" > /dev/null 2>&1
@@ -15,15 +16,8 @@ function INSTALL_APT_PACKAGES() {
 
   INSTALL_PACKAGE curl
 
-  # source bin/packages/gh.sh
-  # source bin/packages/node-npm-yarn.sh
-
-  INSTALL_PACKAGE git
-  # INSTALL_PACKAGE gh
-  INSTALL_PACKAGE htop
-  INSTALL_PACKAGE shellcheck
-  INSTALL_PACKAGE tmux
-  INSTALL_PACKAGE xclip
-  # INSTALL_PACKAGE nodejs
-  INSTALL_PACKAGE zsh
+  for ((i = 0; i < ${#_APT_PACKAGES[@]}; i++)) ; do
+    local APT=${_APT_PACKAGES[$i]}
+      INSTALL_PACKAGE $APT
+  done
 }

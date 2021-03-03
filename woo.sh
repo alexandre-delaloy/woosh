@@ -4,12 +4,10 @@ source bin/colors.sh
 
 source bin/install-apt-packages.sh # INSTALL_APT_PACKAGES
 source bin/install-snap-packages.sh # INSTALL_SNAP_PACKAGES
-source bin/install-config-files.sh # INSTALL_SNAP_PACKAGES
+source bin/install-config-files.sh # INSTALL_CONFIG_FILES
 
-clear
-
-woosh() {
-  read -p "
+WOOSH() {
+  printf "\n" ; read -p "
 ================= $(fyellow "Woosh") $(yellow "{@.@}") =================
 
   $(fblue 'an Ubuntu configuration setup assistant')
@@ -28,20 +26,16 @@ woosh() {
     -
     $(red "[0]") $(fred "Exit")
 
-  [0-7]: " -n 1 -r NUMBER
-
-  echo "
-      "
+  [0-7]: " -n 1 -r NUMBER ; printf "\n\n"
 
   if [[ $NUMBER -eq 1 ]] ; then
     INSTALL_APT_PACKAGES
-    source bin/cp.sh
-    # source bin/docker.sh
+    INSTALL_CONFIG_FILES
     INSTALL_SNAP_PACKAGES
   elif [[ $NUMBER -eq 2 ]] ; then
     INSTALL_APT_PACKAGES
   elif [[ $NUMBER -eq 3 ]] ; then
-    source bin/cp.sh
+    INSTALL_CONFIG_FILES
   elif [[ $NUMBER -eq 4 ]] ; then
     INSTALL_SNAP_PACKAGES
   elif [[ $NUMBER -eq 5 ]] ; then
@@ -54,9 +48,9 @@ woosh() {
     return 0
   fi
   
-  printf "\n$(fyellow 'Terminating...')"
-  sleep 2
-  woosh
+  printf "\n$(fyellow 'Terminating...')" ; sleep 1.2
+
+  WOOSH
 }
 
-woosh
+clear ; WOOSH
