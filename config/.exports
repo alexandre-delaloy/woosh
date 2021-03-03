@@ -1,7 +1,6 @@
 #!/bin/bash
 
-export _APT_PACKAGE=(
-	"curl"
+export _APT_PACKAGES=(
 	"git"
 	"htop"
 	"shellcheck"

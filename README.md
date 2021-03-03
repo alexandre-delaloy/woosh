@@ -1,16 +1,15 @@
 <h1 align="center">Woosh {@.@}</h1>
+
+![banner](assets/banner.png)
+
 <p align="center">
   <img alt="woosh" src="https://img.shields.io/badge/Woosh-%7B%40.%40%7D-b72a2a?style=flat-square"/>
-  <br/>
   <img alt="release" src="https://img.shields.io/github/v/release/blyndusk/woosh?style=flat-square"/>
   <img alt="top language" src="https://img.shields.io/github/languages/top/blyndusk/woosh?style=flat-square"/>
   <img alt="code size" src="https://img.shields.io/github/languages/code-size/blyndusk/woosh?style=flat-square"/>
   <img alt="license" src="https://img.shields.io/github/license/blyndusk/woosh?style=flat-square"/>
-  <br/>
   <img alt="last commit" src="https://img.shields.io/github/last-commit/blyndusk/woosh?style=flat-square"/>
 </p>
-
-![banner](assets/banner.png)
 
 ## I - Goal
 
