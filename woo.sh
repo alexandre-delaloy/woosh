@@ -2,66 +2,60 @@
 
 source bin/colors.sh
 
+source bin/install-apt-packages.sh # INSTALL_APT_PACKAGES
+source bin/install-snap-packages.sh # INSTALL_SNAP_PACKAGES
+source bin/install-config-files.sh # INSTALL_SNAP_PACKAGES
+
 clear
 
 woosh() {
   read -p "
-  Hi $(fyellow "$(whoami)"). I'm $(fgreen "Woosh") $(green "(0.0)"), your personal dotfile configuration assistant.
+================= $(fyellow "Woosh") $(yellow "{@.@}") =================
+
+  $(fblue 'an Ubuntu configuration setup assistant')
+
+==================== $(fgreen '@2.1.0') ===================
   
-  Choose what you wanna do:
+  Hi $(fblue "$(whoami)")! Choose what you wanna do:
 
     $(green "[1]") $(fgreen "Everything below")
     $(yellow "[2]") Install $(fyellow "apt packages")
-    $(yellow "[3]") Copy $(fyellow "dotfiles") (.aliases, .functions, etc..)
-        - .aliases
-        - .functions
-        - .blyndusk-theme.cool-retro-theme
-        - .tmux.sh
-        - .vscode/
-        - .config/Code
+    $(yellow "[3]") Copy $(fyellow "dotfiles") and $(fyellow "applications config")
     $(yellow "[4]") Install $(fyellow "all snap packages") below
-    $(yellow "[5]") Install $(fgreen "[dev]") $(fyellow "snap packages")
-    $(yellow "[6]") Install $(fgreen "[chat]") $(fyellow "snap packages")
-    $(yellow "[7]") Install $(fgreen "[misc]") $(fyellow "snap packages")
+    $(yellow "[5]") Install $(fyellow "snap packages"): $(fgreen "[dev]")
+    $(yellow "[6]") Install $(fyellow "snap packages"): $(fgreen "[chat]")
+    $(yellow "[7]") Install $(fyellow "snap packages"): $(fgreen "[misc]")
     -
     $(red "[0]") $(fred "Exit")
 
   [0-7]: " -n 1 -r NUMBER
 
+  echo "
+      "
+
   if [[ $NUMBER -eq 1 ]] ; then
-    echo "
-    "
-    source bin/apt.sh
+    INSTALL_APT_PACKAGES
     source bin/cp.sh
     # source bin/docker.sh
-    source bin/snaps.sh
+    INSTALL_SNAP_PACKAGES
   elif [[ $NUMBER -eq 2 ]] ; then
-    echo "
-      "
-    source bin/apt.sh
+    INSTALL_APT_PACKAGES
   elif [[ $NUMBER -eq 3 ]] ; then
-    echo "
-      "
     source bin/cp.sh
   elif [[ $NUMBER -eq 4 ]] ; then
-    echo "
-      "
-    source bin/snaps.sh
+    INSTALL_SNAP_PACKAGES
   elif [[ $NUMBER -eq 5 ]] ; then
-    echo "
-      "
-    source bin/snaps.sh 5
+    INSTALL_SNAP_PACKAGES 5
   elif [[ $NUMBER -eq 6 ]] ; then
-    echo "
-      "
-    source bin/snaps.sh 6
+    INSTALL_SNAP_PACKAGES 6
   elif [[ $NUMBER -eq 7 ]] ; then
-    echo "
-      "
-    source bin/snaps.sh 7
+    INSTALL_SNAP_PACKAGES 7
   else
-      return 0
+    return 0
   fi
+  
+  printf "\n$(fyellow 'Terminating...')"
+  sleep 2
   woosh
 }
 
