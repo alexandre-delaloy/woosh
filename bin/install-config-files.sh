@@ -18,12 +18,12 @@ bash ~/.tmux.sh
 
   COPY_FILE config/ .aliases ~
   COPY_FILE config/ .functions ~
-  COPY_FILE config/ .blyndusk-theme.cool-retro-theme.json ~
+  COPY_FILE config/ .gitconfig ~
   COPY_FILE config/ .tmux.sh ~
-
   COPY_FILE config/ .vscode ~
-  COPY_FILE config/ Code ~/.config
+  COPY_FILE config/ .blyndusk-theme.cool-retro-theme.json ~
+
+  COPY_FILE config/ .config/ ~
 
   UPDATE_ZSH_FILE
-
 }

@@ -3,6 +3,7 @@
 export _APT_PACKAGES=(
 	"git"
 	"htop"
+  "make"
 	"shellcheck"
 	"tmux"
 	"xclip"
