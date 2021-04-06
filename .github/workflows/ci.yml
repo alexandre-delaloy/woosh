@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+  
+      - name: 1 - CHECKOUT
+        uses: actions/checkout@v2
+
+      - name: 2 - LINT
+        uses: docker-practice/actions-setup-docker@master
+        run: docker build -t woosh . ; docker run --rm --entrypoint "/bin/shellcheck" woosh **/*.sh
