@@ -17,12 +17,12 @@ function INSTALL_APT_PACKAGES() {
   
   INSTALL_NODEJS
 
-  RUN_COMMAND $ISUDO apt update -y
-  RUN_COMMAND $ISUDO apt upgrade -y
+  RUN_COMMAND "$ISUDO" apt update -y
+  RUN_COMMAND "$ISUDO" apt upgrade -y
 
 
   for ((i = 0; i < ${#_APT_PACKAGES[@]}; i++)) ; do
     local APT=${_APT_PACKAGES[$i]}
-      INSTALL_PACKAGE $APT
+      INSTALL_PACKAGE "$APT"
   done
 }

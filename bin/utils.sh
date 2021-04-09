@@ -4,7 +4,7 @@ source bin/colors.sh
 
 function RUN_COMMAND() {
   COMMAND_STATUS "-" \'"$*"\'
-  $*
+  "$@"
   if [[ "$?" = 0 ]] ; then
     COMMAND_STATUS 'v' \'"$*"\'
     return 0
@@ -68,7 +68,8 @@ function CP_STATUS() {
 }
 
 function CHECK_COMMAND_INSTALLATION() {
-  CMD=$(echo "$1" | sed -e 's/ --classic//g')
+  local CMD
+  CMD=${"$1"// --classic//}
   which "$CMD" > /dev/null 2>&1
   if [[ "$?" = 0 ]] ; then
     INSTALL_STATUS 'v' \'"$CMD"\'

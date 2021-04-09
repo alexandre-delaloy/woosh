@@ -7,7 +7,8 @@ source bin/install-snap-packages.sh # INSTALL_SNAP_PACKAGES
 source bin/install-config-files.sh # INSTALL_CONFIG_FILES
 
 WOOSH() {
-  printf "\n" ; read -p "
+  read -p "
+
 ================= $(fyellow "Woosh") $(yellow "{@.@}") =================
 
   $(fblue 'an Ubuntu configuration setup assistant')
@@ -26,7 +27,8 @@ WOOSH() {
     -
     $(red "[0]") $(fred "Exit")
 
-  [0-7]: " -n 1 -r NUMBER ; printf "\n\n"
+  [0-7]: " -n 1 -r NUMBER
+  printf "\n\n"
 
   if [[ $NUMBER -eq 1 ]] ; then
     INSTALL_APT_PACKAGES
@@ -48,7 +50,7 @@ WOOSH() {
     return 0
   fi
   
-  printf "\n$(fyellow 'Terminating...')" ; sleep 1.2
+  printf "%s\n" "$(fyellow 'Terminating...')" ; sleep 1.2
 
   WOOSH
 }

@@ -6,7 +6,9 @@ source config/.exports
 function INSTALL_SNAP_PACKAGES() {
   function CHECK_SNAP_INSTALL() {
     # remove ' --classic' from the snap packet
-    local CMD=$(echo "$1" | sed -e 's/ --classic//g')
+    local CMD
+    
+    CMD=${"$1"// --classic//}
     # check the location of the snap binary
     which "$CMD" > /dev/null 2>&1
     # check if the command status exit is zero
@@ -22,24 +24,24 @@ function INSTALL_SNAP_PACKAGES() {
   function INSTALL_CHAT_SNAPS() {
     for ((i = 0; i < ${#_SNAP_CHAT_PACKAGES[@]}; i++)) ; do
       local SNAP=${_SNAP_CHAT_PACKAGES[$i]}
-      sudo snap install $SNAP
-      CHECK_SNAP_INSTALL $SNAP
+      sudo snap install "$SNAP"
+      CHECK_SNAP_INSTALL "$SNAP"
     done
   }
 
   function INSTALL_DEV_SNAPS() {
     for ((i = 0; i < ${#_SNAP_DEV_PACKAGES[@]}; i++)) ; do
       local SNAP=${_SNAP_DEV_PACKAGES[$i]}
-      sudo snap install $SNAP
-      CHECK_SNAP_INSTALL $SNAP
+      sudo snap install "$SNAP"
+      CHECK_SNAP_INSTALL "$SNAP"
     done
   }
 
   function INSTALL_MISC_SNAPS() {
     for ((i = 0; i < ${#_SNAP_MISC_PACKAGES[@]}; i++)) ; do
       local SNAP=${_SNAP_MISC_PACKAGES[$i]}
-      sudo snap install $SNAP
-      CHECK_SNAP_INSTALL $SNAP
+      sudo snap install "$SNAP"
+      CHECK_SNAP_INSTALL "$SNAP"
     done
   }
 

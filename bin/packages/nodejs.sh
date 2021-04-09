@@ -8,7 +8,7 @@ INSTALL_NODEJS() {
     ISUDO=""
   fi
 
-  cd ~
+  cd ~ || exit
 
   curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 
@@ -16,5 +16,5 @@ INSTALL_NODEJS() {
 
   rm -rf ~/nodesource_setup.sh
 
-  cd -
+  cd - || exit
 }
