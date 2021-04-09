@@ -39,12 +39,27 @@ A **prompt will be displayed**, and depending on the _number_ you enter, an **ac
 
 ![woosh](assets/prompt.png)
 
-## III - Test
+## III - Development
 
-You can test some **Woosh**'s features in a _remote Ubuntu machine_, to avoid **overwriting your local configuration**, by using Docker.
+You can test some **Woosh**'s features in a _remote Ubuntu machine_, to avoid **overwriting your local configuration**, by using Makefile.
+
+
+### A - Start
+
+> Start woo.sh in a Ubuntu environment
+
 
 ```bash
-docker build -t woosh . ; docker run --rm -it woosh
+make start
+```
+
+### B - Lint
+
+> Start shellcheck lint
+
+
+```bash
+make start
 ```
 
 ## IV - License
