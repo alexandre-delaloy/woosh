@@ -11,6 +11,9 @@
   <img alt="last commit" src="https://img.shields.io/github/last-commit/blyndusk/woosh?style=flat-square"/>
 </p>
 
+![weeky-contribs](https://gh-readme-contrib.herokuapp.com/api/blyndusk/woosh)
+
+
 ## I - Goal
 
 **Woosh** is my personnal _Ubuntu configuration setup assistant_.
