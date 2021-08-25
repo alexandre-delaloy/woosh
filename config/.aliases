@@ -60,13 +60,51 @@ alias dkcu="docker-compose up"
 alias dkcub="docker-compose up --build"
 alias dkcf="docker-compose up --build --remove-orphans --force-recereate"
 
+
 # KUBECTL
 alias k="kubectl"
-alias ka="kubectl apply"
-alias kcv="kubectl config view"
-alias kd="kubectl delete"
-alias kg="kubectl get"
-alias ks="kubectl set"
+
+alias kgcm="kubectl get configmap"
+alias kecm="kubectl edit configmap"
+alias kdcm="kubectl delete configmap"
+
+alias kgd="kubectl get deploy"
+alias ked="kubectl edit deploy"
+alias kdd="kubectl delete deploy"
+
+alias kgd="kubectl get ingress"
+alias ked="kubectl edit ingress"
+alias kdd="kubectl delete ingress"
+
+alias kgp="kubectl get pod"
+alias kep="kubectl edit pod"
+alias kdp="kubectl delete pod"
+
+alias kgrs="kubectl get replicaset"
+alias kers="kubectl edit replicaset"
+alias kdrs="kubectl delete replicaset"
+
+alias kgsc="kubectl get secret"
+alias kesc="kubectl edit secret"
+alias kdsc="kubectl delete secret"
+
+alias kgsr="kubectl get service"
+alias kesr="kubectl edit service"
+alias kdsr="kubectl delete service"
+
+alias kgss="kubectl get statefulsets"
+alias kess="kubectl edit statefulsets"
+alias kdss="kubectl delete statefulsets"
+
+alias kgs="kubectl get volume"
+alias kes="kubectl edit volume"
+alias kds="kubectl delete volume"
+
+
+alias mk="minikube"
+alias mksr="minikube start --vm-driver=virtualbox"
+alias mkst="minikube status"
+alias mksp="minikube stop"
 
 # FIREBASE
 alias fbi="firebase init"
